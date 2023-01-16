@@ -9,8 +9,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    @include('partials.nav')
-
+    <div>
+        <img src="" alt="Logo">
+    </div>
     @yield('content')
 </body>
 </html>

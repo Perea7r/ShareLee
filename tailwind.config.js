@@ -3,7 +3,7 @@ module.exports = {
     daisyui: {
         themes: [
           {
-            mytheme: {
+            sharelee: {
             "primary": "#e5d352",
             "secondary": "#4b7f52",
             "accent": "#2e5077",
@@ -16,7 +16,7 @@ module.exports = {
             },
           },
         ],
-      },
+    },
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -25,7 +25,13 @@ module.exports = {
     './components/**/*.{html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            'Montserrat' : ['Montserrat', 'sans-serif'],
+            'Passions' : ['Passions Conflict', 'cursive'],
+            'Special' : ['Special Elite', 'cursive']
+        }
+    },
   },
   plugins: [require("daisyui")],
 }
