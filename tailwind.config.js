@@ -4,8 +4,8 @@ module.exports = {
         themes: [
           {
             sharelee: {
-            "primary": "#e5d352",
-            "secondary": "#4b7f52",
+            "primary": "#d8c84d",
+            "secondary": "#67c574",
             "accent": "#2e5077",
             "neutral": "#efe9f4",
             "base-100": "#f8f4fa",
