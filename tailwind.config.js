@@ -15,7 +15,7 @@ module.exports = {
             "error": "#F27388",
             },
           },
-        ],
+          "cupcake"],
     },
   content: [
     "./resources/**/*.blade.php",
