@@ -29,7 +29,8 @@ module.exports = {
         fontFamily: {
             'Montserrat' : ['Montserrat', 'sans-serif'],
             'Passions' : ['Passions Conflict', 'cursive'],
-            'Special' : ['Special Elite', 'cursive']
+            'Special' : ['Special Elite', 'cursive'],
+            'Nefelibata' : ['Nefelibata Script', 'sans-serif']
         }
     },
   },
