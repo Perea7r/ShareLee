@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ciudads', function (Blueprint $table) {
-            $table->bigIncrements('idCiudad');
-            $table->string('ciudad', 40);
+        Schema::create('ejemplar_tiene_tags', function (Blueprint $table) {
+            $table->unsignedBigInteger('idEjemplar');
+            $table->unsignedBigInteger('idTag');
             $table->timestamps();
+
+            $table->foreign('idEjemplar')->references('idEjemplar')->on('ejemplars');
+            $table->foreign('idTag')->references('idTag')->on('tags');
         });
     }
 
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ciudads');
+        Schema::dropIfExists('ejemplar_tiene_tags');
     }
 };

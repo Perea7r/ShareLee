@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ciudads', function (Blueprint $table) {
-            $table->bigIncrements('idCiudad');
-            $table->string('ciudad', 40);
+        Schema::create('libreria_crea_eventos', function (Blueprint $table) {
+            $table->unsignedBigInteger('idLibreria');
+            $table->unsignedBigInteger('idEvento');
             $table->timestamps();
+
+            $table->foreign('idLibreria')->references('idLibreria')->on('librerias');
+            $table->foreign('idEvento')->references('idEvento')->on('eventos');
         });
     }
 
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ciudads');
+        Schema::dropIfExists('libreria_crea_eventos');
     }
 };

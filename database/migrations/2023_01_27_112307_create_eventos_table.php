@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ciudads', function (Blueprint $table) {
-            $table->bigIncrements('idCiudad');
-            $table->string('ciudad', 40);
+        Schema::create('eventos', function (Blueprint $table) {
+            $table->bigIncrements('idEvento');
+            $table->string('nombre',15);
+            $table->string('descripcion', 160);
+            $table->date('fechaIni');
+            $table->time('duracion');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ciudads');
+        Schema::dropIfExists('eventos');
     }
 };
