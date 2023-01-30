@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('ejemplar_intercambia_ejemplars', function (Blueprint $table) {
             $table->unsignedBigInteger('idEjemplar1');
-            $table->unsignedBigInteger('idEjemplar1');
+            $table->unsignedBigInteger('idEjemplar2');
             $table->timestamps();
 
-            $table->foreign('idEjemplar1')->references('idEjemplar1')->on('ejemplars');
-            $table->foreign('idEjemplar2')->references('idEjemplar2')->on('ejemplars');
+            $table->foreign('idEjemplar1')->references('idEjemplar')->on('ejemplars');
+            $table->foreign('idEjemplar2')->references('idEjemplar')->on('ejemplars');
         });
     }
 

@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('mensaje', 160);
             $table->timestamps();
 
-            $table->foreign('idUsuario1')->references('idUsuario1')->on('usuarios');
-            $table->foreign('idUsuario2')->references('idUsuario2')->on('usuarios');
+            $table->foreign('idUsuario1')->references('idUsuario')->on('usuarios');
+            $table->foreign('idUsuario2')->references('idUsuario')->on('usuarios');
         });
     }
 

@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tags', function (Blueprint $table) {
-            $table->bigIncrements('idTag');
-            $table->string('tag',15);
+        Schema::create('ejemplar_tiene_etiquetas', function (Blueprint $table) {
+            $table->unsignedBigInteger('idEjemplar');
+            $table->unsignedBigInteger('idEtiqueta');
             $table->timestamps();
+
+            $table->foreign('idEjemplar')->references('idEjemplar')->on('ejemplars');
+            $table->foreign('idEtiqueta')->references('idEtiqueta')->on('etiquetas');
         });
     }
 
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tags');
+        Schema::dropIfExists('ejemplar_tiene_etiquetas');
     }
 };
