@@ -18,6 +18,6 @@
         <a href="" class="text-lg font-medium">TERROR</a>
     </div>
     <div class="badge badge-primary badge-lg h-8 w-48">
-        <a href="" class="text-lg font-medium">SUBIR UN LIBRO</a>
+        <label for="subir-libro" class="text-lg font-medium">SUBIR UN LIBRO</label>
     </div>
 </nav>

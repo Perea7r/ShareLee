@@ -6,7 +6,7 @@ module.exports = {
             sharelee: {
             "primary": "#ffde59",
             "secondary": "#67c574",
-            "accent": "#2e5077",
+            "accent": "#6aace2",
             "neutral": "#efe9f4",
             "base-100": "#f8f4fa",
             "info": "#89D7E6",

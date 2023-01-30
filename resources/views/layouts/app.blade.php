@@ -26,4 +26,5 @@
 
 </body>
 
+    @include('partials.modalbook')
 </html>
