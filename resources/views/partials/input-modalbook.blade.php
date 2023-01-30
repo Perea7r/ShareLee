@@ -41,7 +41,12 @@
             <img src="/images/icono-ayuda.svg" alt="icono ayuda">
         </div>
     </div>
-    <input type="text" class="border border-black !outline-none">
+    <div class="form-control">
+        <div class="flex">
+            <img class="absolute h-6" src="images/sharelines.png" alt="icono sharelines">
+            <input type="text" class="border border-black !outline-none ">
+        </div>
+    </div>
 </div>
 
 <div>
@@ -51,6 +56,5 @@
 
 <div class="row-span-3">
     <p>*Foto</p>
-    <input type="file"
-        class="file-input file-input-bordered w-full max-w-xs file-input-accent !outline-none hover:file-input-info">
+    <input type="file" class="file-input file-input-bordered w-full max-w-xs file-input-accent !outline-none hover:file-input-info">
 </div>

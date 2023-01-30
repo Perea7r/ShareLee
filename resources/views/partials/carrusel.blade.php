@@ -1,12 +1,12 @@
 <section class="flex w-screen h-96">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/harry-potter.jpg" alt="Portada Harry Potter 1">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/camino-reyes.jpg" alt="Portada El Camino de los Reyes">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/hijo-traidor.jpg" alt="Portada El Hijo del Traidor">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/imperio-final.jpg" alt="Portada El Imperio Final">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/guardianes-ciudadela.jpg" alt="Portada Guardianes de la Ciudadela">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/señor-anillos.jpg" alt="Portada El Señor de los Anillos">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/trenza-esmeralda.jpg" alt="Portada Trenza del Mar Esmeralda">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/harry-camara.jpg" alt="Portada Harry Potter 2">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/cosmere.jpg" alt="Portada Arcanum Ilimitado">
-    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125"src="/images/chica-nieve.jpg" alt="Portada la Chica de Nieve">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/harry-potter.jpg" alt="Portada Harry Potter 1">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/camino-reyes.jpg" alt="Portada El Camino de los Reyes">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/hijo-traidor.jpg" alt="Portada El Hijo del Traidor">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/imperio-final.jpg" alt="Portada El Imperio Final">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/guardianes-ciudadela.jpg" alt="Portada Guardianes de la Ciudadela">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/señor-anillos.jpg" alt="Portada El Señor de los Anillos">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/trenza-esmeralda.jpg" alt="Portada Trenza del Mar Esmeralda">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/harry-camara.jpg" alt="Portada Harry Potter 2">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/cosmere.jpg" alt="Portada Arcanum Ilimitado">
+    <img class="w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-150"src="/images/chica-nieve.jpg" alt="Portada la Chica de Nieve">
 </section>
