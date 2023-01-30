@@ -25,6 +25,5 @@
     @include('partials.footer')
 
 </body>
-
     @include('partials.modalbook')
 </html>
