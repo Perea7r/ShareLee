@@ -9,9 +9,9 @@
             <p class="font-Montserrat">Los campos marcados con (*) son obligatorios</p>
         </div>
 
-        <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
+        <form action="#" class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
             @include('partials.input-modalbook')
-        </div>
+        </form>
 
         <div class="modal-action">
             <label for="subir-libro"

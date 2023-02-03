@@ -25,12 +25,20 @@
 
 <div>
     <p>*Formato</p>
-    <input type="text" class="border border-black !outline-none">
+    <select class="select !outline-none">
+        <option value="tapa-dura">Tapa dura</option>
+        <option value="tapa-blanda">Tapa blanda</option>
+    </select>
 </div>
 
 <div>
     <p>*Estado del libro</p>
-    <input type="text" class="border border-black !outline-none">
+    <select class=" select !outline-none">
+        <option value="nuevo">Nuevo</option>
+        <option value="como-nuevo">Como nuevo</option>
+        <option value="usado">Usado</option>
+        <option value="muy-usado">Muy usado</option>
+    </select>
 </div>
 
 <div>
