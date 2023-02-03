@@ -1,68 +1,84 @@
-<div>
-    <label>*Título</label>
-    <input type="text" required class="border border-black !outline-none">
-</div>
+<div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Título</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
-<div>
-    <label>*ISBN</label>
-    <input type="text" required class="border border-black !outline-none">
-</div>
+ <div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">ISBN</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
-<div>
-    <label>*Idioma</label>
-    <input type="text" required class="border border-black !outline-none">
-</div>
+<div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Idioma</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
+ 
+ <div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Autor</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
-<div>
-    <label>*Autor</label>
-    <input type="text" class="border border-black !outline-none">
-</div>
-
-<div>
-    <label>*Editorial</label>
-    <input type="text" class="border border-black !outline-none">
-</div>
+ <div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Editorial</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
 <div>
     <label>*Formato</label>
     <select class="select !outline-none">
-        <option value="tapa-dura">Tapa dura</option>
-        <option value="tapa-blanda">Tapa blanda</option>
+        <option value="Dura">Tapa dura</option>
+        <option value="Blanda">Tapa blanda</option>
     </select>
 </div>
+
+<div class="form-control w-64"> 
+    <label class="input-group-vertical">
+        <select name="" id="">
+            <option value="Dura">Tapa Dura</option>
+            <option value="Blanda">Tapa Blanda</option>
+        </select>
+      <span class="font-Montserrat text-sm">Editorial</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
 <div>
     <label>*Estado del libro</label>
     <select class=" select !outline-none">
-        <option value="nuevo">Nuevo</option>
-        <option value="como-nuevo">Como nuevo</option>
-        <option value="usado">Usado</option>
-        <option value="muy-usado">Muy usado</option>
+        <option value="N">Nuevo</option>
+        <option value="CN">Como nuevo</option>
+        <option value="U">Usado</option>
+        <option value="MU">Muy usado</option>
     </select>
 </div>
 
-<div>
-    <div class="flex gap-1">
-        <p class="text-left">*Sharelines</label>
-        <div class="tooltip tooltip-primary cursor-help"
-            data-tip="Valor simbólico que se le da a un ejemplar para ser intercambiado.">
-            <img src="/images/icono-ayuda.svg" alt="icono ayuda">
-        </div>
-    </div>
-    <div class="form-control">
-        <div class="flex">
-            <img class="absolute h-6" src="images/sharelines.png" alt="icono sharelines">
-            <input type="text" class="border border-black !outline-none ">
-        </div>
-    </div>
-</div>
+<div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Sharelines</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
-<div>
-    <label>Tags</label>
-    <input type="text" class="border border-black !outline-none">
-</div>
+<div class="form-control w-64"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">*Tags</span>
+      <input type="text" class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent"/>
+    </label>
+ </div>
 
-<div class="row-span-3">
-    <label>*Foto</label>
-    <input type="file" class="file-input file-input-bordered w-full max-w-xs file-input-accent !outline-none hover:file-input-info">
-</div>
+ <div class="form-control w-64 row-span-3"> 
+    <label class="input-group-vertical">
+      <span class="font-Montserrat text-sm">Foto</span>
+      <input type="file" class="file-input file-input-bordered w-full max-w-md file-input-accent hover:file-input-info">
+ </div>
+
