@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ejemplar extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = 'idEjemplar';
 }
