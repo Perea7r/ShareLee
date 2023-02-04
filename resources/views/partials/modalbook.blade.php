@@ -6,7 +6,7 @@
         <div class="divider"></div>
 
         <div class="mb-3">
-            <p class="font-Montserrat">Los campos marcados con (*) son obligatorios</p>
+            <p class="font-Montserrat">Los campos marcados con (*) son opcionales</p>
         </div>
 
         <form action="#" class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
