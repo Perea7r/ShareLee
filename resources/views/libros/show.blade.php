@@ -1,2 +1,2 @@
-<h1>{{ $libro->titulo}}</h1>
-<p>{{$libro->descripcion}}</p>
+<h1>{{ $libro->foto}}</h1>
+<p>{{$libro->titulo}}</p>

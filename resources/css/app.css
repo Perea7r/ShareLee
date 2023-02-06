@@ -10,5 +10,9 @@
     .modalbook__select{
         @apply select flex w-64 select-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent h-2 min-h-8 !rounded-tr-none !rounded-bl-md
     }
+
+    .form__button{
+       @apply btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case
+    }
 }
 

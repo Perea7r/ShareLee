@@ -5,17 +5,15 @@
         <h3 class="font-bold text-xl font-Montserrat">Subir mi libro</h3>
         <div class="divider mt-0"></div>
 
-        <form action="#" class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
-            @include('partials.input-modalbook')
+        <form action="{{ route('categorias.store') }}" method="POST">
+            @csrf
+            <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
+                @include('partials.input-modalbook')
+            </div>
+
+            <div class="modal-action mt-0">
+                <button for="subir-libro" type="submit" class="form__button">Subir</button>
+            </div>
         </form>
-
-        <div class="mt-2">
-            <p class="font-Montserrat text-xs">Los campos marcados con (*) son opcionales</p>
-        </div>
-
-        <div class="modal-action mt-0">
-            <label for="subir-libro"
-                class="btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case">Subir</label>
-        </div>
     </div>
 </div>
