@@ -15,11 +15,15 @@
 </div>
 
 <div class="form-control w-64">
-    <label class="input-group-vertical" for="categoria">
-        <span class="font-Montserrat text-sm">Categoria</span>
-        <input type="text" name="categoria" id="categoria" required
-            class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
-    </label>
+    <div class="input-group-vertical">
+        <label class="text-sm" for="categoria">Categoria</label>
+        <select class="modalbook__select" name="categoria" id="categoria" required>
+            <option disabled selected>-Elige el estado-</option>
+            @foreach ($categorias as $categoria)
+                <option value="{{$categoria->idCategoria}}">{{$categoria->categoria}}</option>
+            @endforeach
+        </select>
+    </div>
 </div>
 
 <div class="form-control w-64">
