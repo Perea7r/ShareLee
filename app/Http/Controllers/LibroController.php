@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ejemplar;
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 
 class LibroController extends Controller
 {
     public function index(){
         $libros = Ejemplar::get();
+        $categorias = Categoria::all();
 
-        return view('categorias', ['libros' => $libros]);
+        return view('index', compact('categorias' , 'libros'));
         
     }
 

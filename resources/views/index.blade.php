@@ -12,4 +12,11 @@
     <div class="text-4xl p-5">
         <h1 class="font-Nefelibata">Ultimos libros subidos</h1>
     </div>
+
+    <div>
+        @foreach ($libros as $libro)
+            <h3>{{ $libro['titulo'] }}</h3>
+            <img src="{{$libro['foto']}}" alt="{{$libro['titulo']}}">
+        @endforeach
+    </div>
 @endsection
