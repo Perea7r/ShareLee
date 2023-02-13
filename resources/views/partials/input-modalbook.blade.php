@@ -1,16 +1,22 @@
 <div class="form-control w-64">
     <label class="input-group-vertical" for="titulo">
         <span class="font-Montserrat text-sm">Título</span>
-        <input type="text" name="titulo" id="titulo"
+        <input type="text" value="{{old('titulo')}}" name="titulo" id="titulo"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('titulo')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
-<div class="form-control w-72">
+<div class="form-control w-64">
     <label class="input-group-vertical" for="descripcion">
         <span class="font-Montserrat text-sm">*Descripción</span>
         <textarea type="text" name="descripcion" id="descripcion"
-            class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent max-h-11"></textarea>
+            class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent max-h-11">{{old('descripcion')}}</textarea>
+            @error('descripcion')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
@@ -23,38 +29,53 @@
                 <option value="{{ $categoria->idCategoria }}">{{ $categoria->categoria }}</option>
             @endforeach
         </select>
+        @error('categoria')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </div>
 </div>
 
 <div class="form-control w-64">
     <label class="input-group-vertical" for="ISBN">
         <span class="font-Montserrat text-sm">ISBN</span>
-        <input type="text" name="ISBN" id="ISBN"
+        <input type="text" value="{{old('ISBN')}}" name="ISBN" id="ISBN"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('ISBN')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
 <div class="form-control w-64">
     <label class="input-group-vertical" for="idioma">
         <span class="font-Montserrat text-sm">Idioma</span>
-        <input type="text" name="idioma" id="idioma"
+        <input type="text" value="{{old('idioma')}}" name="idioma" id="idioma"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('idioma')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
 <div class="form-control w-64">
     <label class="input-group-vertical" for="autor">
         <span class="font-Montserrat text-sm">Autor</span>
-        <input type="text" name="autor" id="autor"
+        <input type="text" value="{{old('autor')}}" name="autor" id="autor"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('autor')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
 <div class="form-control w-64">
     <label class="input-group-vertical" for="editorial">
         <span class="font-Montserrat text-sm">Editorial</span>
-        <input type="text" name="editorial" id="editorial"
+        <input type="text" value="{{old('editorial')}}" name="editorial" id="editorial"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('editorial')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
@@ -66,6 +87,9 @@
             <option value="Dura">Tapa dura</option>
             <option value="Blanda">Tapa Blanda</option>
         </select>
+        @error('formato')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </div>
 </div>
 
@@ -79,6 +103,9 @@
             <option value="U">Usado</option>
             <option value="MU">Muy usado</option>
         </select>
+        @error('estado')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </div>
 </div>
 
@@ -86,16 +113,22 @@
 <div class="form-control w-64">
     <label class="input-group-vertical" for="sharelines">
         <span class="font-Montserrat text-sm">Sharelines</span>
-        <input type="text" name="sharelines" id="sharelines"
+        <input type="text" value="{{old('sharelines')}}" name="sharelines" id="sharelines"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('sharelines')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
 <div class="form-control w-64">
     <label class="input-group-vertical" for="tags">
         <span class="font-Montserrat text-sm">Tags</span>
-        <input type="text" name="tags" id="tags"
+        <input type="text" value="{{old('tags')}}" name="tags" id="tags"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
+            @error('tags')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
     </label>
 </div>
 
@@ -104,4 +137,7 @@
         <span class="font-Montserrat text-sm">Foto</span>
         <input type="file" name="foto" id="foto"
             class="file-input file-inp ut-bordered file-input-accent hover:file-input-info w-72">
+            @error('foto')
+                <small class="text-red-600">{{$message}}</small> 
+            @enderror
 </div>

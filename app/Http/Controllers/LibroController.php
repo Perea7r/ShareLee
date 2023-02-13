@@ -23,7 +23,18 @@ class LibroController extends Controller
 
     public function store(Request $request){
         $request->validate([
-            'titulo' => ['required']
+            'titulo' => ['required'],
+            'ISBN' => ['required'],
+            'categoria' => ['required'],
+            'idioma' => ['required'],
+            'autor' => ['required'],
+            'editorial' => ['required'],
+            'formato' => ['required'],
+            'estado' => ['required'],
+            'sharelines' => ['required','numeric'],
+            'tags' => ['required'],
+            'descripcion' => ['required'],
+            'foto' => ['required']
         ]);
 
         $libro = new Ejemplar();
@@ -40,9 +51,8 @@ class LibroController extends Controller
         $libro->descripcion = $request->input("descripcion");
         $libro->foto = $request->input("foto");
         $libro->save();
-
+        
         session()->flash('status', '¡Libro subido! Gracias');
-
         return to_route('index');
     }
 }

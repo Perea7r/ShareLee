@@ -5,7 +5,6 @@
         <h3 class="font-bold text-xl font-Montserrat">Subir mi libro</h3>
         <div class="divider mt-0"></div>
 
-        @dump($errors)
         <form action="{{ route('categorias.store') }}" method="POST">
             @csrf
             <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
