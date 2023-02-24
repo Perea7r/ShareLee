@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class LibroController extends Controller
 {
     public function index(){
-        $libros = Ejemplar::get();
+        $libros = Ejemplar::all();
         $categorias = Categoria::all();
 
         return view('index', compact('categorias' , 'libros'));
@@ -23,21 +23,23 @@ class LibroController extends Controller
 
     public function store(Request $request){
         $request->validate([
-            'titulo' => ['required'],
-            'ISBN' => ['required'],
+            'titulo' => ['required','min:5','max:200'],
+            'ISBN' => ['required','integer'],
             'categoria' => ['required'],
             'idioma' => ['required'],
             'autor' => ['required'],
             'editorial' => ['required'],
             'formato' => ['required'],
             'estado' => ['required'],
-            'sharelines' => ['required','numeric'],
+            'sharelines' => ['required','integer'],
             'tags' => ['required'],
             'descripcion' => ['required'],
-            'foto' => ['required']
+            'foto' => ['required','mimes:jpeg,jpg,png']
         ]);
 
         $libro = new Ejemplar();
+
+        
         $libro->titulo = $request->input("titulo");
         $libro->ISBN = $request->input("ISBN");
         $libro->idCategoria =  $request->input('categoria');
@@ -49,7 +51,10 @@ class LibroController extends Controller
         $libro->sharelines = $request->input("sharelines");
         $libro->tags = $request->input("tags");
         $libro->descripcion = $request->input("descripcion");
-        $libro->foto = $request->input("foto");
+        if($request->hasFile('foto')){
+            $libro['foto'] = $request->file('foto')->store('uploads','public');
+            compact($libro['foto']);
+        }
         $libro->save();
         
         session()->flash('status', '¡Libro subido! Gracias');

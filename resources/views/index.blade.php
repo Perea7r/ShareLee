@@ -13,12 +13,21 @@
         <h1 class="font-Nefelibata">Ultimos libros subidos</h1>
     </div>
 
-    <div class="grid grid-cols-2">
+    <div class="flex gap-16 ml-7">
+        @php
+            $count = 0;
+        @endphp
+
         @foreach ($libros as $libro)
-            <div>
-                <h3>{{ $libro['titulo'] }}</h3>
-                <img src="{{ $libro['foto'] }}" alt="{{ $libro['titulo'] }}">
-            </div>
+            @break($count == 5)
+            <figure class="text-center flex flex-col">
+                <img class="h-72 w-48"  src="{{ asset('storage') . '/' . $libro->foto }}"
+                    alt="El nombre del titulo de la portada es {{ $libro['titulo'] }}">
+                <figcaption class="font-Montserrat w-48">{{ $libro['titulo'] }}</figcaption>
+            </figure>
+            @php
+                $count++;
+            @endphp
         @endforeach
     </div>
 @endsection

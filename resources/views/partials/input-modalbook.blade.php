@@ -31,7 +31,7 @@
         </select>
         @error('categoria')
                 <small class="text-red-600">{{$message}}</small> 
-            @enderror
+        @enderror
     </div>
 </div>
 
@@ -85,11 +85,11 @@
         <select class="modalbook__select" name="formato" id="formato">
             <option disabled selected>-Elige el formato-</option>
             <option value="Dura">Tapa dura</option>
-            <option value="Blanda">Tapa Blanda</option>
+            <option value="Blanda">Tapa blanda</option>
         </select>
         @error('formato')
                 <small class="text-red-600">{{$message}}</small> 
-            @enderror
+        @enderror
     </div>
 </div>
 
@@ -105,7 +105,7 @@
         </select>
         @error('estado')
                 <small class="text-red-600">{{$message}}</small> 
-            @enderror
+        @enderror
     </div>
 </div>
 
