@@ -53,7 +53,6 @@ class LibroController extends Controller
         $libro->descripcion = $request->input("descripcion");
         if($request->hasFile('foto')){
             $libro['foto'] = $request->file('foto')->store('uploads','public');
-            compact($libro['foto']);
         }
         $libro->save();
         
