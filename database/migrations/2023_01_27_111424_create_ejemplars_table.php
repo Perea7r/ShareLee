@@ -29,9 +29,6 @@ return new class extends Migration
             $table->string('tags',10);
             $table->string('foto',250);
             
-            
-            
-            
             $table->timestamps();
 
             $table->foreign('idCategoria')->references('idCategoria')->on('categorias');

@@ -113,6 +113,9 @@
 <div class="form-control w-64">
     <label class="input-group-vertical" for="sharelines">
         <span class="font-Montserrat text-sm">Sharelines</span>
+        <div class="tooltip tooltip-primary" data-tip="Los sharelines son una moneda símbolica del valor ya sea por contenido, numero de páginas o sentimental que tiene ese libro para ti.">
+            <img src="/images/icono-ayuda.svg" alt="icono ayuda">
+        </div>
         <input type="text" value="{{old('sharelines')}}" name="sharelines" id="sharelines"
             class="input h-8 input-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent" />
             @error('sharelines')
