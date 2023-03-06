@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LibroController::class, 'index'])->name('index');
 
-Route::get('/categorias',[CategoriasController::class, 'index'])->name('categorias');
+Route::get('/categorias/{categoria}',[CategoriasController::class, 'index'])->name('categorias');
 
 Route::get('/categorias/{libro}', [LibroController::class, 'show'])->name('libros.show');
 

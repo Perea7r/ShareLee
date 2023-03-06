@@ -13,7 +13,16 @@
         <h1 class="font-Nefelibata">Ultimos libros subidos</h1>
     </div>
 
-    <div class="flex gap-16 ml-7">
+    <div class="flex gap-16 ml-6">
         @include('partials.lastbook')
     </div>
+
+    <div class="text-4xl p-5">
+        <h1 id="categorias" class="font-Nefelibata">Categorías</h1>
+    </div>
+
+    <div class="pl-16 grid grid-cols-5 gap">
+        @include('partials.categoriasIndex')
+    </div>
+
 @endsection

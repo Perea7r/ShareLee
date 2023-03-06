@@ -14,5 +14,9 @@
     .form__button{
        @apply btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case
     }
+
+    .categorias__centerText{
+        @apply font-Nefelibata font-[550] text-3xl absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4
+    }
 }
 
