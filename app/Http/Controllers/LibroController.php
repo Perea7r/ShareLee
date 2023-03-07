@@ -10,7 +10,7 @@ class LibroController extends Controller
 {
     public function index(){
         $libros = Ejemplar::all();
-        $categorias = Categoria::all();
+        $categorias = Categoria::get();
 
         return view('index', compact('categorias' , 'libros'));
         

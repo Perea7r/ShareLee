@@ -8,9 +8,13 @@ use Illuminate\Http\Request;
 
 class CategoriasController extends Controller{
     public function index(){
-        $categorias = Categoria::all();
+        $libros = Ejemplar::all();
+        $categorias = Categoria::get();
 
-        return view('categorias', compact('categorias'));
-        
+        return view('categorias.index', compact('categorias' , 'libros'));
+    }
+
+    public function show(Categoria $categoria){
+        return view('categorias.show', ['categoria' => $categoria]);
     }
 }
