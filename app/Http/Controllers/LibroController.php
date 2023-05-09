@@ -16,10 +16,13 @@ class LibroController extends Controller
 
     }
 
-    public function show($libro){
+    public function show($libro, $categoria){
         $libro = Ejemplar::find($libro);
-        return view('libros.show', ['libro' => $libro]);
+        $libros = Ejemplar::where('idCategoria', $categoria)->get();
+        return view('libros.show', ['libro' => $libro, 'libros' => $libros]);
     }
+
+
 
     public function store(Request $request){
         $request->validate([
@@ -57,6 +60,6 @@ class LibroController extends Controller
         $libro->save();
 
         session()->flash('status', '¡Libro subido! Gracias');
-        return to_route('index');
+        return redirect()->route('index');
     }
 }
