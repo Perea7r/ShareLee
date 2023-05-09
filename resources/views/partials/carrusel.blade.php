@@ -1,4 +1,4 @@
-<section class="flex w-screen h-96">
+<section class="flex w-full h-96">
     <img class="carrousel__imagen"src="/images/harry-potter.jpg" alt="Portada Harry Potter 1">
     <img class="carrousel__imagen"src="/images/camino-reyes.jpg" alt="Portada El Camino de los Reyes">
     <img class="carrousel__imagen"src="/images/hijo-traidor.jpg" alt="Portada El Hijo del Traidor">

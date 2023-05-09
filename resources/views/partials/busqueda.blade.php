@@ -12,3 +12,5 @@
             class="input border-4 border-slate-600 rounded-full !outline-none w-96" />
     </div>
 </div>
+
+
