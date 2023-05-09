@@ -7,12 +7,12 @@
             </a>
         </li>
         <li>
-            <a>
+            <a href="/#categorias">
                 Categorías
             </a>
         </li>
         <li>
-            La categoría en si
+            {{$categoria->categoria}}
         </li>
     </ul>
 </div>

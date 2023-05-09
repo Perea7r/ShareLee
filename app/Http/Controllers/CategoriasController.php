@@ -11,7 +11,7 @@ class CategoriasController extends Controller{
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
 
-        return view('categorias.index', compact('categorias' , 'libros'));
+        return view('categorias.show', compact('categorias' , 'libros'));
     }
 
     public function show(Categoria $categoria){

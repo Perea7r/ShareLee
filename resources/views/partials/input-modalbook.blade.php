@@ -25,9 +25,13 @@
         <label class="text-sm" for="categoria">Categoria</label>
         <select class="modalbook__select" name="categoria" id="categoria">
             <option disabled selected>-Elige la categoria-</option>
-            @foreach ($categorias as $categoria)
-                <option value="{{ $categoria->idCategoria }}">{{ $categoria->categoria }}</option>
-            @endforeach
+            @if (isset($categorias) 
+            )
+                @foreach ($categorias as $categoria)
+                    <option value="{{ $categoria->idCategoria }}">{{ $categoria->categoria }}</option>
+                @endforeach
+            @endif
+            
         </select>
         @error('categoria')
                 <small class="text-red-600">{{$message}}</small> 
