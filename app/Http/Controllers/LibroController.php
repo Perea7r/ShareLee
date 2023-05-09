@@ -13,12 +13,12 @@ class LibroController extends Controller
         $categorias = Categoria::get();
 
         return view('index', compact('categorias' , 'libros'));
-        
+
     }
 
     public function show($libro){
         $libro = Ejemplar::find($libro);
-        return view('libros.show', ['libro' => $libro]); 
+        return view('libros.show', ['libro' => $libro]);
     }
 
     public function store(Request $request){
@@ -39,7 +39,7 @@ class LibroController extends Controller
 
         $libro = new Ejemplar();
 
-        
+
         $libro->titulo = $request->input("titulo");
         $libro->ISBN = $request->input("ISBN");
         $libro->idCategoria =  $request->input('categoria');
@@ -55,7 +55,7 @@ class LibroController extends Controller
             $libro['foto'] = $request->file('foto')->store('uploads','public');
         }
         $libro->save();
-        
+
         session()->flash('status', '¡Libro subido! Gracias');
         return to_route('index');
     }
