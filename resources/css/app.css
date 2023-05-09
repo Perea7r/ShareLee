@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Passions+Conflict&family=Special+Elite&display=swap');
+font-face {
+    font-family: 'Nefelibata';
+    src: local('Nefelibata Script'), local('Nefelibata-Script'),
+        url('Nefelibata-Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

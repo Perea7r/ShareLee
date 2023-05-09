@@ -1,7 +1,7 @@
 <div class="relative inline-block text-center w-44">
     <img src="/images/bookscategory/libroVerde.png" alt="icono libro color Verde">
     <div class="categorias__centerText">
-        <a href="/categorias/2">
+        <a href="/categorias/1">
             <span>Juvenil</span>
         </a>
     </div>
@@ -9,7 +9,7 @@
 <div class="relative inline-block text-center w-44">
     <img src="/images/bookscategory/libroNaranja.png" alt="icono libro color Naranja">
     <div class="categorias__centerText">
-       <a href="/categorias/3">
+       <a href="/categorias/2">
          <span>Novela Histórica</span>
        </a>
     </div>
@@ -17,7 +17,7 @@
 <div class="relative inline-block text-center w-44">
     <img src="/images/bookscategory/libroAmarillo.png" alt="icono libro color Amarillo">
     <div class="categorias__centerText">
-        <a href="/categorias/1">
+        <a href="/categorias/3">
             <span>Fantasía</span>
         </a>
     </div>

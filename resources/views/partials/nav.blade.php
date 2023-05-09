@@ -1,9 +1,9 @@
 <nav class="flex gap-4 font-Montserrat ml-9 md:flex-wrap flex-wrap">
     <div class="badge badge-secondary badge-lg h-8 w-36">
-        <a href="#categorias" class="text-lg font-medium">CATEGORIAS</a>
+        <a href="/#categorias" class="text-lg font-medium">CATEGORIAS</a>
     </div>
     <div class="badge badge-secondary badge-lg h-8 w-36">
-        <a href="/categorias/1" class="text-lg font-medium">FANTASIA</a>
+        <a href="/categorias/3" class="text-lg font-medium">FANTASIA</a>
     </div>
     <div class="badge badge-secondary badge-lg h-8 w-36">
         <a href="/categorias/5" class="text-lg font-medium">SUSPENSE</a>
@@ -22,5 +22,5 @@
             <label for="subir-libro" class="text-lg font-medium cursor-pointer">SUBIR UN LIBRO</label>
         </div>
     @endif
-    
+
 </nav>
