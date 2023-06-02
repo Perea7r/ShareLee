@@ -5,14 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\Ejemplar;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LibroController extends Controller
-{
-    public function index(){
+{   const paginacion = 10;
+    public function index(Request $request){
+
+        $search = $request->get('search');
+        $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')
+        ->where('autor', 'like', '%')->paginate($this::paginacion);
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
 
-        return view('index', compact('categorias' , 'libros'));
+        return view('index', compact('categorias' , 'libros', 'search'));
 
     }
 
@@ -62,4 +67,5 @@ class LibroController extends Controller
         session()->flash('status', '¡Libro subido! Gracias');
         return redirect()->route('index');
     }
+
 }
