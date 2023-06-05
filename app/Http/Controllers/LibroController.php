@@ -21,12 +21,12 @@ class LibroController extends Controller
 
     }
 
-    public function show(Request $request, $libros){
-        $libros = Ejemplar::find($libros);
+    public function show(Request $request, $idEjemplar){
+        $libro = Ejemplar::find($idEjemplar);
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
         $search = $request->get('search');
-        return view('ejemplar', compact('libros', 'search', 'categorias'));
+        return view('ejemplar', compact('libros', 'search', 'categorias', 'libro'));
     }
 
 
