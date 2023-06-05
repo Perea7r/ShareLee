@@ -13,7 +13,7 @@
         <h2 class="font-Nefelibata">Ultimos libros subidos</h2>
     </div>
 
-    <div class="flex gap-16 ml-6">
+    <div class="flex flex-wrap gap-16 ml-6">
         @include('partials.lastbook')
     </div>
 
@@ -21,7 +21,7 @@
         <h2 id="categorias" class="font-Nefelibata">Categorías</h2>
     </div>
 
-    <div class="pl-16 grid grid-cols-5 gap">
+    <div class="flex flex-wrap justify-center lg:grid lg:grid-cols-5 ">
         @include('partials.categoriasIndex')
     </div>
 
