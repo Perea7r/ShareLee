@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('title', 'Categorias')
+@section('meta-description', 'Categorias meta description')
+
+@section('content')
+
 <div class="text-sm breadcrumbs mt-5 ml-14 ">
     <ul>
         <li>
@@ -12,7 +19,8 @@
             </a>
         </li>
         <li>
-            {{$categoria->categoria}}
+
         </li>
     </ul>
 </div>
+@endsection

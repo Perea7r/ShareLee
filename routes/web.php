@@ -14,7 +14,7 @@ Route::get('/categorias',[CategoriasController::class, 'index'])->name('categori
 Route::get('/categorias/{categoria}',[CategoriasController::class, 'show'])->name('categorias.show');
 
 //La ruta /categorias/{libro} corresponde al método show del controlador LibroController.
-Route::get('/categorias/{libro}', [LibroController::class, 'show'])->name('libros.show');
+Route::get('/ejemplar/{libro}', [LibroController::class, 'show'])->name('ejemplar');
 
 //La ruta /categorias (método POST) corresponde al método store del controlador LibroController.
 Route::post('/categorias', [LibroController::class, 'store'])->name('categorias.store');

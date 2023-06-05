@@ -16,11 +16,12 @@ class CategoriasController extends Controller
         return view('categorias.index', ['categorias' => $categorias]);
     }
 
-    public function show($id){
+    public function show($id, Request $request){
         $categoria = Categoria::find($id);
         $libros = $categoria->libros;
+        $search = $request->get('search');
 
-        return view('categorias.show', ['categoria' => $categoria, 'libros' => $libros]);
+        return view('categorias.show', compact('categoria', 'libros', 'search'));
     }
 
 }
