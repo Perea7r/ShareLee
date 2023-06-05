@@ -23,5 +23,4 @@ class CategoriasController extends Controller
 
         return view('categorias.show', compact('categoria', 'libros', 'search'));
     }
-
 }
