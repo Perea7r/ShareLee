@@ -1,68 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Passions+Conflict&family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Passions+Conflict&family=Special+Elite&display=swap");
 font-face {
-    font-family: 'Nefelibata';
-    src: local('Nefelibata Script'), local('Nefelibata-Script'),
-        url('Nefelibata-Script.ttf') format('truetype');
+    font-family: "Nefelibata";
+    src: local("Nefelibata Script"), local("Nefelibata-Script"),
+        url("Nefelibata-Script.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .carrousel__imagen{
+    .carrousel__imagen {
         @apply w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125;
     }
 
-    .modalbook__select{
-        @apply select flex w-64 select-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent h-2 min-h-8 !rounded-tr-none !rounded-bl-md
+    .modalbook__select {
+        @apply select flex w-64 select-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent h-2 min-h-8 !rounded-tr-none !rounded-bl-md;
     }
 
-    .form__button{
-       @apply btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case
+    .form__button {
+        @apply btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case;
     }
 
-    .categorias__centerText{
-        @apply font-Nefelibata font-[550] text-3xl absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4
+    .categorias__centerText {
+        @apply font-Nefelibata font-[550] text-3xl absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
     }
-
 }
 
 [id="heart"] {
     position: absolute;
     left: -100vw;
-  }
+}
 
-  [for="heart"] {
+[for="heart"] {
     color: #aab8c2;
     cursor: pointer;
     font-size: 6em;
     align-self: center;
     transition: color 0.2s ease-in-out;
-  }
+}
 
-  [for="heart"]:hover {
+[for="heart"]:hover {
     color: grey;
-  }
+}
 
-  [for="heart"]::selection {
+[for="heart"]::selection {
     color: none;
     background: transparent;
-  }
+}
 
-  [for="heart"]::moz-selection {
+[for="heart"]::moz-selection {
     color: none;
     background: transparent;
-  }
+}
 
-  [id="heart"]:checked + label {
+[id="heart"]:checked + label {
     color: #e2264d;
     will-change: font-size;
-    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-  }
+    animation: heart 0.70s 0s;
+}
 
+@keyframes heart {
+    0% {
+        transform: translateY(0rem);
+    }
 
-
-  @keyframes heart {0%, 17.5% {font-size: 0;}}
-
+    17.5% {
+        transform: translateY(-1.5rem);
+    }
+    60% {
+        transform: translateY(0.2rem);
+    }
+}
