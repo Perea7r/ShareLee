@@ -9,9 +9,9 @@
 <div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroNaranja.png" alt="icono libro color Naranja">
     <div class="categorias__centerText">
-       <a href="/categorias/2">
-         <span>Novela Histórica</span>
-       </a>
+        <a href="/categorias/2">
+            <span>Novela Histórica</span>
+        </a>
     </div>
 </div>
 <div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
@@ -49,7 +49,7 @@
 <div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroNaranjaPocho.png" alt="icono libro color Naranja claro">
     <div class="categorias__centerText">
-        <a href="/categori lg:s/7 p-4">
+        <a href="/categorias/7">
             <span>Deportes</span>
         </a>
     </div>
