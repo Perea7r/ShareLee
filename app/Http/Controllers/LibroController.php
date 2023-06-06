@@ -12,8 +12,7 @@ class LibroController extends Controller
     public function index(Request $request){
 
         $search = $request->get('search');
-        $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')
-        ->where('autor', 'like', '%')->paginate($this::paginacion);
+        $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')->paginate($this::paginacion);
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
 

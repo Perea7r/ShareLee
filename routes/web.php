@@ -7,8 +7,7 @@ use Illuminate\Support\Facades\Route;
 //La ruta / corresponde al método index del controlador LibroController.
 Route::get('/', [LibroController::class, 'index'])->name('index');
 
-//La ruta /categorias corresponde al método index del controlador CategoriasController.
-Route::get('/categorias',[CategoriasController::class, 'index'])->name('categorias');
+Route::get('/usuarios', 'UsuariosController@index')->name('usuarios.index');
 
 //La ruta /categorias/{categoria} corresponde al método show del controlador CategoriasController.
 Route::get('/categorias/{categoria}',[CategoriasController::class, 'show'])->name('categorias.show');
@@ -18,4 +17,6 @@ Route::get('/ejemplar/{libro}', [LibroController::class, 'show'])->name('ejempla
 
 //La ruta /categorias (método POST) corresponde al método store del controlador LibroController.
 Route::post('/categorias', [LibroController::class, 'store'])->name('categorias.store');
+
+
 
