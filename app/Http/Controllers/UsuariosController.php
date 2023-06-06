@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Ejemplar;
+use App\Models\Categoria;
 class UsuariosController extends Controller
 {
     /**
@@ -11,9 +12,14 @@ class UsuariosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    const paginacion = 10;
+    public function index(Request $request)
     {
-        return view('usuarios');
+        $search = $request->get('search');
+        $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')->paginate($this::paginacion);
+        $libros = Ejemplar::all();
+        $categorias = Categoria::get();
+        return view('usuarios', compact('search', 'libros', 'categorias'));
     }
 
     /**

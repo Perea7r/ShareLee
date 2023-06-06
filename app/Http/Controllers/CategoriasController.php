@@ -17,9 +17,10 @@ class CategoriasController extends Controller
 
     public function show($id, Request $request){
         $categoria = Categoria::find($id);
+        $categorias = Categoria::get();
         $libros = $categoria->libros;
         $search = $request->get('search');
 
-        return view('categorias.show', compact('categoria', 'libros', 'search'));
+        return view('categorias.show', compact('categoria', 'libros', 'search', 'categorias'));
     }
 }
