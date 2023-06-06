@@ -38,7 +38,6 @@ font-face {
     cursor: pointer;
     font-size: 6em;
     align-self: center;
-    transition: color 0.2s ease-in-out;
 }
 
 [for="heart"]:hover {
@@ -58,18 +57,4 @@ font-face {
 [id="heart"]:checked + label {
     color: #e2264d;
     will-change: font-size;
-    animation: heart 0.70s 0s;
-}
-
-@keyframes heart {
-    0% {
-        transform: translateY(0rem);
-    }
-
-    17.5% {
-        transform: translateY(-1.5rem);
-    }
-    60% {
-        transform: translateY(0.2rem);
-    }
 }
