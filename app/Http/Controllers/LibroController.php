@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ejemplar;
 use App\Models\Categoria;
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,17 +16,19 @@ class LibroController extends Controller
         $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')->paginate($this::paginacion);
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
+        $usuario = Usuario::find(1);
 
-        return view('pages.index.index', compact('categorias' , 'libros', 'search'));
+        return view('pages.index.index', compact('categorias' , 'libros', 'search', 'usuario'));
 
     }
 
     public function show(Request $request, $idEjemplar){
         $libro = Ejemplar::find($idEjemplar);
         $libros = Ejemplar::all();
+        $usuario = Usuario::find(1);
         $categorias = Categoria::get();
         $search = $request->get('search');
-        return view('pages.ejemplar.ejemplar', compact('libros', 'search', 'categorias', 'libro'));
+        return view('pages.ejemplar.ejemplar', compact('libros', 'search', 'categorias', 'libro', 'usuario'));
     }
 
 

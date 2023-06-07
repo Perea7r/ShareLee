@@ -10,19 +10,19 @@
                 <label for="my-drawer"></label>
                 <ul class="bg-base-100 font-Montserrat text-xl text-center w-56">
                     <li class="p-3 activo" data-target="mis-datos">
-                        <a href="#">Mis datos</a>
+                        <a href="#mis-datos">Mis datos</a>
                     </li>
                     <li class="p-3" data-target="lista-deseos">
-                        <a href="#">Lista de deseos</a>
+                        <a href="#lista-deseos">Lista de deseos</a>
                     </li>
                     <li class="p-3" data-target="intercambios-realizados">
-                        <a href="#">Intercambios realizados</a>
+                        <a href="#intercambios-realizados">Intercambios realizados</a>
                     </li>
                     <li class="p-3" data-target="mis-libros">
-                        <a href="#">Mis libros</a>
+                        <a href="#mis-libros">Mis libros</a>
                     </li>
                     <li class="p-3" data-target="mis-mensajes">
-                        <a href="#">Mis mensajes</a>
+                        <a href="#mis-mensajes">Mis mensajes</a>
                     </li>
                 </ul>
             </div>

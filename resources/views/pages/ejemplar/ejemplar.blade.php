@@ -35,7 +35,7 @@
                         @include('partials.perfil.fotoPerfil')
                     </div>
 
-                    <p class="text-lg font-Montserrat text-center">Antonio</p>
+                    <p class="text-lg font-Montserrat text-center">{{$usuario->usuario}}</p>
                     <div class="col-start-2">
 
                         <div class="rating space-x-1">

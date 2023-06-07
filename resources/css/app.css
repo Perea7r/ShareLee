@@ -76,7 +76,6 @@ font-face {
 }
 
 .activo ~ li a:hover {
-    background-color: #e5e7eb;
     color: #111827;
 }
 
