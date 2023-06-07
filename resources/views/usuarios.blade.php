@@ -4,44 +4,71 @@
 @section('meta-description', 'index meta description')
 @section('content')
 
-    <div class="flex  my-6 p-6">
+    <div class="flex my-6 p-6">
         <div>
             <div class="drawer">
                 <label for="my-drawer"></label>
-                <ul class="bg-base-100 font-Montserrat text-xl text-center">
-                    <li class="hover:bg-secondary p-3"><a href="#">Mis datos</a></li>
-                    <li class="hover:bg-secondary p-3"><a href="#">Lista de deseos</a></li>
-                    <li class="hover:bg-secondary p-3"><a href="#">Intercambios realizados</a></li>
-                    <li class="hover:bg-secondary p-3"><a href="#">Mis libros</a></li>
-                    <li class="hover:bg-secondary p-3"><a href="#">Mis mensajes</a></li>
+                <ul class="bg-base-100 font-Montserrat text-xl text-center w-56">
+                    <li class="p-3 activo" data-target="mis-datos">
+                        <a href="#">Mis datos</a>
+                    </li>
+                    <li class="p-3" data-target="lista-deseos">
+                        <a href="#">Lista de deseos</a>
+                    </li>
+                    <li class="p-3" data-target="intercambios-realizados">
+                        <a href="#">Intercambios realizados</a>
+                    </li>
+                    <li class="p-3" data-target="mis-libros">
+                        <a href="#">Mis libros</a>
+                    </li>
+                    <li class="p-3" data-target="mis-mensajes">
+                        <a href="#">Mis mensajes</a>
+                    </li>
+                </ul>
             </div>
-            </ul>
         </div>
 
-        <div class="w-full mx-20">
-            <h2 class="text-4xl font-Special border-b-2 border-black">Mis datos</h2>
-            <div class="mt-2 flex-grow">
-                <table class="table">
-                    <tbody class="font-Montserrat text-xl">
-                        <tr>
-                            <th class="pl-0">Nombre y apellidos</th>
-                            <td>{{ $usuario->nombre . ' ' . $usuario->apellidos }}</td>
-                        </tr>
 
-                        <tr>
-                            <th class="pl-0">Email</th>
-                            <td>{{ $usuario->email }}</td>
-                        </tr>
+        <div class="contenido">
+            <div class="mis-datos contenido-oculto">
 
-                        <tr>
-                            <th class="pl-0">Usuario</th>
-                            <td>{{ $usuario->usuario }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="w-full mx-20">
+                    <h2 class="text-4xl font-Special border-b-2 border-black">Mis datos</h2>
+                    <div class="mt-2 flex-grow">
+                        <table class="table">
+                            <tbody class="font-Montserrat text-xl">
+                                <tr>
+                                    <th class="pl-0">Nombre y apellidos</th>
+                                    <td>{{ $usuario->nombre . ' ' . $usuario->apellidos }}</td>
+                                </tr>
+
+                                <tr>
+                                    <th class="pl-0">Email</th>
+                                    <td>{{ $usuario->email }}</td>
+                                </tr>
+
+                                <tr>
+                                    <th class="pl-0">Usuario</th>
+                                    <td>{{ $usuario->usuario }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
-            <button class="btn btn-primary w-64 uppercase font-Montserrat text-lg">Subir un
-                libro</button>
+            <div class="lista-deseos contenido-oculto">
+                Lista de deseos
+            </div>
+            <div class="intercambios-realizados contenido-oculto">
+                Intercambios realizados
+            </div>
+            <div class="mis-libros contenido-oculto">
+                Mis libros
+            </div>
+            <div class="mis-mensajes contenido-oculto">
+                Mis mensajes
+            </div>
         </div>
     </div>
 @endsection

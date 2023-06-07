@@ -58,3 +58,26 @@ font-face {
     color: #e2264d;
     will-change: font-size;
 }
+
+.contenido-oculto {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease;
+}
+
+.activo a {
+    font-weight: bold;
+    background-color: #67C574;
+}
+
+.activo {
+    background-color: #67C574;
+    padding: 0.5rem 1rem;
+}
+
+.activo ~ li a:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+
