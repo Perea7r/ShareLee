@@ -58,16 +58,44 @@
                 </div>
             </div>
             <div class="lista-deseos contenido-oculto">
-                Lista de deseos
+                <div class="w-full mx-20">
+
+                    <h2 class="text-4xl font-Special border-b-2 border-black">Lista de deseos</h2>
+                    <div class="mt-2">
+
+                    </div>
+
+                </div>
             </div>
             <div class="intercambios-realizados contenido-oculto">
-                Intercambios realizados
+                <div class="w-full mx-20">
+
+                    <h2 class="text-4xl font-Special border-b-2 border-black">Intercambios realizados</h2>
+                    <div class="mt-2">
+
+                    </div>
+
+                </div>
             </div>
             <div class="mis-libros contenido-oculto">
-                Mis libros
+                <div class="w-full mx-20">
+
+                    <h2 class="text-4xl font-Special border-b-2 border-black">Mis libros</h2>
+                    <div class="mt-2">
+
+                    </div>
+
+                </div>
             </div>
             <div class="mis-mensajes contenido-oculto">
-                Mis mensajes
+                <div class="w-full mx-20">
+
+                    <h2 class="text-4xl font-Special border-b-2 border-black">Mis mensajes</h2>
+                    <div class="mt-2">
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

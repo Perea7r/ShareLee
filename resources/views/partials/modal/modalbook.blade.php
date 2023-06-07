@@ -8,7 +8,7 @@
         <form action="{{ route('categorias.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
-                @include('partials.input-modalbook')
+                @include('partials.modal.input-modalbook')
             </div>
 
             <div class="modal-action mt-0">

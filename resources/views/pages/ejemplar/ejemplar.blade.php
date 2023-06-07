@@ -5,7 +5,7 @@
 
 @section('content')
 
-    @include('partials.breadcrumbLibro')
+    @include('partials.breadcrumbs.breadcrumbLibro')
     <div class="py-8 px-16">
         <div class="flex justify-around gap-14">
             <div class="flex mt-9">
@@ -22,7 +22,7 @@
                 <h2 class="font-Special text-4xl"> Ficha técnica</h2>
                 <table class="table">
                     <tbody>
-                        @include('partials.tablaFichaTecnica')
+                        @include('partials.ficha_tecnica.tablaFichaTecnica')
                     </tbody>
                 </table>
             </div>
@@ -32,7 +32,7 @@
                 <div class="grid grid-cols-[1fr_2fr] grid-rows-2">
 
                     <div class="row-span-2">
-                        @include('partials.fotoPerfil')
+                        @include('partials.perfil.fotoPerfil')
                     </div>
 
                     <p class="text-lg font-Montserrat text-center">Antonio</p>

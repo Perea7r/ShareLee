@@ -3,7 +3,6 @@ document.querySelectorAll('.contenido-oculto:not(:first-of-type)').forEach(conte
     contenido.style.height = '0';
 });
 
-// Función para mostrar el contenido correspondiente
 function mostrarContenido(target) {
     // Oculta todos los bloques de contenido
     document.querySelectorAll('.contenido-oculto').forEach(contenido => {

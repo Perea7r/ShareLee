@@ -7,14 +7,14 @@
         <h2 class="font-Montserrat">¿Ya disfrutaste de un buen libro? ¡Compártelo!</h2>
     </div>
 
-    @include('partials.carrusel')
+    @include('partials.carrusel.carrusel')
 
     <div class="text-4xl p-5">
         <h2 class="font-Nefelibata">Ultimos libros subidos</h2>
     </div>
 
     <div class="flex flex-wrap gap-16 ml-6">
-        @include('partials.lastbook')
+        @include('partials.lastbook.lastbook')
     </div>
 
     <div class="text-4xl p-5">
@@ -22,7 +22,7 @@
     </div>
 
     <div class="flex flex-wrap justify-center lg:grid lg:grid-cols-5 ">
-        @include('partials.categoriasIndex')
+        @include('partials.categorias.categoriasIndex')
     </div>
 
 @endsection

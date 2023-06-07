@@ -21,6 +21,6 @@ class CategoriasController extends Controller
         $libros = $categoria->libros;
         $search = $request->get('search');
 
-        return view('categorias.show', compact('categoria', 'libros', 'search', 'categorias'));
+        return view('pages.categorias.categorias', compact('categoria', 'libros', 'search', 'categorias'));
     }
 }

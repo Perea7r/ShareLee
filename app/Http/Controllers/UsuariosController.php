@@ -21,7 +21,7 @@ class UsuariosController extends Controller
         $libros = Ejemplar::all();
         $usuario = Usuario::find(1);
         $categorias = Categoria::get();
-        return view('usuarios', compact('search', 'libros', 'categorias', 'usuario'));
+        return view('pages.usuarios.usuarios', compact('search', 'libros', 'categorias', 'usuario'));
     }
 
     /**

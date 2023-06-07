@@ -16,7 +16,7 @@ class LibroController extends Controller
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
 
-        return view('index', compact('categorias' , 'libros', 'search'));
+        return view('pages.index.index', compact('categorias' , 'libros', 'search'));
 
     }
 
@@ -25,7 +25,7 @@ class LibroController extends Controller
         $libros = Ejemplar::all();
         $categorias = Categoria::get();
         $search = $request->get('search');
-        return view('ejemplar', compact('libros', 'search', 'categorias', 'libro'));
+        return view('pages.ejemplar.ejemplar', compact('libros', 'search', 'categorias', 'libro'));
     }
 
 

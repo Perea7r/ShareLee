@@ -24,23 +24,23 @@
     @endif
 
     <div class="flex justify-center lg:justify-between navbar bg-base-100 px-6 flex-wrap">
-        @include('partials.logo')
+        @include('partials.logo.logo')
         <div class="flex justify-between gap-7 w-fit lg:gap-0 lg:w-3/5">
-            @include('partials.busqueda')
-            @include('partials.dropdownmenu')
+            @include('partials.busqueda.busqueda')
+            @include('partials.perfil.dropdownmenu')
         </div>
     </div>
 
-    @include('partials.nav')
+    @include('partials.nav.nav')
 
     @yield('content')
 
-    @include('partials.footer')
+    @include('partials.footer.footer')
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
-@include('partials.modalbook')
+@include('partials.modal.modalbook')
 
 </html>
