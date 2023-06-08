@@ -1,5 +1,5 @@
     @guest
-        <dialog id="my_modal" class="modal">
+        <dialog id="my_modal" class="modal modal-open">
             <form method="dialog" class="modal-box w-11/12 max-w-5xl rounded-none">
                 <button for="my-modal" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                 <div class="flex justify-center mt-5">
@@ -20,7 +20,9 @@
 
 
                     <div class="flex justify-between my-10">
-                        <button class="btn rounded-none w-48">Iniciar sesión</button>
+                        <button
+                            class="btn rounded-none w-48 bg-gradient-to-r from-sky-600 to-sky-400 border border-black">Iniciar
+                            sesión</button>
                         <a class="text-accent" href="#">¿Has olvidado tu contraseña?</a>
                     </div>
                 </div>
@@ -37,7 +39,8 @@
 
 
                     <div class="flex justify-between my-8">
-                        <button class="btn rounded-none w-48">Registrarme</button>
+                        <button
+                            class="btn rounded-none w-48 bg-gradient-to-r from-secondary to-green-400 border border-black">Registrarme</button>
                     </div>
                 </div>
 

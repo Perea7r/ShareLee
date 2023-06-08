@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 //La ruta / corresponde al método index del controlador LibroController.
 Route::get('/', [LibroController::class, 'index'])->name('index');
 
-Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios')->middleware('auth');
+Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios');
 
 //La ruta /categorias/{categoria} corresponde al método show del controlador CategoriasController.
 Route::get('/categorias/{categoria}',[CategoriasController::class, 'show'])->name('categorias.show');
