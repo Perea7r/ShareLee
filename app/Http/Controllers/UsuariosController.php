@@ -13,6 +13,8 @@ class UsuariosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     const paginacion = 10;
     public function index(Request $request)
     {

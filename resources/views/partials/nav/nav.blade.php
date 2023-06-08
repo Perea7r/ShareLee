@@ -18,11 +18,10 @@
         <a href="/categorias/8" class="text-lg font-medium">TERROR</a>
     </div>
 
-    @if (@isset($categorias))
+    @auth
         <div class="badge badge-primary badge-lg h-8 w-48">
             <label for="subir-libro" class="text-lg font-medium cursor-pointer">SUBIR UN LIBRO</label>
         </div>
-    @endif
-
+    @endauth
 
 </nav>

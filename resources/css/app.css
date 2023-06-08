@@ -26,6 +26,10 @@ font-face {
     .categorias__centerText {
         @apply font-Nefelibata font-[550] text-3xl absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
     }
+
+    .text__input{
+        @apply rounded-none input focus:border-none border border-black border-solid;
+    }
 }
 
 [id="heart"] {
