@@ -1,4 +1,4 @@
-<div class="text-sm breadcrumbs mt-5 ml-14 ">
+<div class="text-sm breadcrumbs mt-5 ml-14 inline-block">
     <ul>
         <li>
             <a href="/">
@@ -12,7 +12,7 @@
             </a>
         </li>
         <li>
-            {{$categoria->categoria}}
+            {{ $categoria->categoria }}
         </li>
     </ul>
 </div>
