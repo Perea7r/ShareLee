@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nombre',15);
             $table->string('descripcion', 160);
             $table->date('fechaIni');
+            $table->date('fechaFin');
             $table->time('duracion');
             $table->timestamps();
         });
