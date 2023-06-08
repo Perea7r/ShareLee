@@ -38,3 +38,16 @@ document.querySelectorAll('.drawer li').forEach((li, index) => {
 
 // Muestra el contenido correspondiente al cargar la página
 mostrarContenido(document.querySelector('.activo').getAttribute('data-target'));
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function mostrarContenidoModal(target) {
+    const elementosContenido = document.querySelectorAll('.contenido');
+    for (let i = 0; i < elementosContenido.length; i++) {
+        if (elementosContenido[i].id === target) {
+            elementosContenido[i].classList.remove('hidden');
+        } else {
+            elementosContenido[i].classList.add('hidden');
+        }
+    }
+}

@@ -30,6 +30,13 @@ font-face {
     .text__input{
         @apply rounded-none input focus:border-none border border-black border-solid;
     }
+
+    .button__entrar{
+        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus:bg-transparent focus:border-b-transparent focus:border-l-accent hover:bg-base-100 hover:border-transparent focus:border-t-accent focus:border-r-transparent focus:text-accent;
+    }
+    .button__nuevo-usuario{
+        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus:bg-transparent focus:border-b-transparent focus:border-r-secondary hover:bg-base-100 hover:border-transparent focus:border-l-transparent focus:border-t-secondary focus:text-secondary;
+    }
 }
 
 [id="heart"] {
@@ -82,5 +89,3 @@ font-face {
 .activo ~ li a:hover {
     color: #111827;
 }
-
-
