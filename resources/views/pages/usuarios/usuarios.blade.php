@@ -82,7 +82,24 @@
 
                     <h2 class="text-4xl font-Special border-b-2 border-black">Mis libros</h2>
                     <div class="mt-2">
+                        <div class="grid grid-cols-4">
+                            @php
+                                $count = 0;
+                            @endphp
 
+                            @foreach ($libros as $libro)
+                                @break($count == 8)
+                                <figure>
+                                    <a href="/ejemplar/{{ $libro->idEjemplar }}">
+                                        <img class="h-60 mt-3" src="{{ asset('storage') . '/' . $libro->foto }}"
+                                            alt="El nombre del titulo de la portada es {{ $libro['titulo'] }}">
+                                    </a>
+                                </figure>
+                                @php
+                                    $count++;
+                                @endphp
+                            @endforeach
+                        </div>
                     </div>
 
                 </div>
