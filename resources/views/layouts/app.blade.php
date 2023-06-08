@@ -42,5 +42,6 @@
 
 </body>
 @include('partials.modal.modalbook')
+@include('partials.modal.modalLogin')
 
 </html>
