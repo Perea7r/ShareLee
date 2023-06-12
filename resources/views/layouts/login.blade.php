@@ -35,7 +35,7 @@
 
             <!-- Right column container -->
 
-            <form class="my-8 w-60 flex flex-col justify-center">
+            <form class="my-8 w-60 flex flex-col text-center justify-center">
                 <h2 class="font-Montserrat text-2xl font-bold my-8">Nuevo usuario</h2>
 
                 <div class="form-control gap-4">
