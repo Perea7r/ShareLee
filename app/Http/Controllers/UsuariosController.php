@@ -25,6 +25,13 @@ class UsuariosController extends Controller
         $categorias = Categoria::get();
         return view('pages.usuarios.usuarios', compact('search', 'libros', 'categorias', 'usuario'));
     }
+    public function showLoginForm(Request $request)
+    {
+        $search = $request->get('search');
+        $libros = Ejemplar::where('titulo', 'like', '%' .$search. '%')->paginate($this::paginacion);
+        $libros = Ejemplar::all();
+        return view('layouts.login', compact('search', 'libros'));
+    }
 
     /**
      * Show the form for creating a new resource.
