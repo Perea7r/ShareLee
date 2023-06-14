@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\Usuario;
+use App\Models\Ejemplar;
+use App\Models\Categoria;
+
 class UsuariosController extends Controller
 {
     /**
@@ -21,6 +24,16 @@ class UsuariosController extends Controller
         return response()->json([
             'data' => $usuarios
         ], 200);
+    }
+    const paginacion = 10;
+    public function perfil(Request $request)
+    {
+        $search = $request->get('search');
+        $libros = Ejemplar::where('titulo', 'like', '%' . $search . '%')->paginate($this::paginacion);
+        $categorias = Categoria::get();
+        $usuario = Auth::user();
+
+        return view('pages.usuarios.perfil', compact('categorias', 'libros', 'search', 'usuario'));
     }
 
     public function login(Request $request)
@@ -50,38 +63,38 @@ class UsuariosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Request $request)
-{
-    $usuario = new Usuario;
-    $usuario->nombre = $request->input('nombre');
-    $usuario->apellidos = $request->input('apellidos');
-    $usuario->email = $request->input('email');
-    $usuario->password = bcrypt($request->input('password'));
-    $usuario->save();
+    {
+        $usuario = new Usuario;
+        $usuario->nombre = $request->input('nombre');
+        $usuario->apellidos = $request->input('apellidos');
+        $usuario->email = $request->input('email');
+        $usuario->password = bcrypt($request->input('password'));
+        $usuario->save();
 
-    return view('pages.index.index');
-}
+        return view('pages.index.index');
+    }
 
-public function register(Request $request)
-{
-    // Validar los datos del formulario de registro
-    $validatedData = $request->validate([
-        'nombre' => 'required|string|max:15',
-        'apellidos' => 'required|string|max:40',
-        'password' => 'required|string|max:40',
-        'email' => 'required|email|unique:usuarios,email|max:255',
-    ]);
+    public function register(Request $request)
+    {
+        // Validar los datos del formulario de registro
+        $validatedData = $request->validate([
+            'nombre' => 'required|string|max:15',
+            'apellidos' => 'required|string|max:40',
+            'password' => 'required|string|max:40',
+            'email' => 'required|email|unique:usuarios,email|max:255',
+        ]);
 
-    // Crear un nuevo usuario con los datos proporcionados
-    $usuario = new Usuario;
-    $usuario->nombre = $request->input('nombre');
-    $usuario->apellidos = $request->input('apellidos');
-    $usuario->email = $request->input('email');
-    $usuario->password = bcrypt($request->input('password'));
-    $usuario->save();
+        // Crear un nuevo usuario con los datos proporcionados
+        $usuario = new Usuario;
+        $usuario->nombre = $request->input('nombre');
+        $usuario->apellidos = $request->input('apellidos');
+        $usuario->email = $request->input('email');
+        $usuario->password = bcrypt($request->input('password'));
+        $usuario->save();
 
-    // Redirigir al usuario a la página de inicio de sesión
-    return redirect('/login');
-}
+        // Redirigir al usuario a la página de inicio de sesión
+        return redirect('/login');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -90,33 +103,33 @@ public function register(Request $request)
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-{
-    $validator = Validator::make($request->all(), [
-        'nombre' => 'required|string|max:15',
-        'apellidos' => 'required|string|max:40',
-        'password' => 'required|string|max:40',
-        'email' => 'required|email|unique:usuarios,email|max:255',
-    ]);
+    {
+        $validator = Validator::make($request->all(), [
+            'nombre' => 'required|string|max:15',
+            'apellidos' => 'required|string|max:40',
+            'password' => 'required|string|max:40',
+            'email' => 'required|email|unique:usuarios,email|max:255',
+        ]);
 
-    if ($validator->fails()) {
+        if ($validator->fails()) {
+            return response()->json([
+                'error' => $validator->errors(),
+            ], 400);
+        }
+
+        $usuario = new Usuario;
+        $usuario->nombre = $request->input('nombre');
+        $usuario->apellidos = $request->input('apellidos');
+        $usuario->password = bcrypt($request->input('password'));
+        $usuario->usuario = $request->input('usuario');
+        $usuario->email = $request->input('email');
+        $usuario->save();
+
         return response()->json([
-            'error' => $validator->errors(),
-        ], 400);
+            'message' => 'Usuario creado exitosamente',
+            'data' => $usuario
+        ], 201);
     }
-
-    $usuario = new Usuario;
-    $usuario->nombre = $request->input('nombre');
-    $usuario->apellidos = $request->input('apellidos');
-    $usuario->password = bcrypt($request->input('password'));
-    $usuario->usuario = $request->input('usuario');
-    $usuario->email = $request->input('email');
-    $usuario->save();
-
-    return response()->json([
-        'message' => 'Usuario creado exitosamente',
-        'data' => $usuario
-    ], 201);
-}
 
     /**
      * Display the specified resource.
@@ -126,7 +139,6 @@ public function register(Request $request)
      */
     public function show($id)
     {
-
     }
 
     /**
@@ -185,7 +197,7 @@ public function register(Request $request)
         if ($request->has('email')) {
             $usuario->email = $request->input('email');
         }
-         $usuario->save();
+        $usuario->save();
 
         return response()->json([
             'message' => 'Usuario actualizado exitosamente',
@@ -201,7 +213,7 @@ public function register(Request $request)
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-     public function destroy($id)
+    public function destroy($id)
     {
         $usuario = Usuario::find($id);
 

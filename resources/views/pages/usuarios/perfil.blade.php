@@ -39,17 +39,12 @@
                             <tbody class="font-Montserrat text-xl">
                                 <tr>
                                     <th class="pl-0">Nombre y apellidos</th>
-                                    <td>{{ $usuario->nombre . ' ' . $usuario->apellidos }}</td>
+                                    <td>{{ $usuario->nombre }} {{ $usuario->apellidos }}</td>
                                 </tr>
 
                                 <tr>
                                     <th class="pl-0">Email</th>
                                     <td>{{ $usuario->email }}</td>
-                                </tr>
-
-                                <tr>
-                                    <th class="pl-0">Usuario</th>
-                                    <td>{{ $usuario->usuario }}</td>
                                 </tr>
                             </tbody>
                         </table>
