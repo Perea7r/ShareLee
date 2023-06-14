@@ -35,7 +35,7 @@
 
             <!-- Right column container -->
 
-            <form action="{{ route('register') }}" method="POST"
+            <form action="{{ url('/register') }}" method="POST"
                 class="my-8 w-60 flex flex-col text-center justify-center">
                 @csrf
 

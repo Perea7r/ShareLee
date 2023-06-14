@@ -61,6 +61,28 @@ class UsuariosController extends Controller
     return view('pages.index.index');
 }
 
+public function register(Request $request)
+{
+    // Validar los datos del formulario de registro
+    $validatedData = $request->validate([
+        'nombre' => 'required|string|max:15',
+        'apellidos' => 'required|string|max:40',
+        'password' => 'required|string|max:40',
+        'email' => 'required|email|unique:usuarios,email|max:255',
+    ]);
+
+    // Crear un nuevo usuario con los datos proporcionados
+    $usuario = new Usuario;
+    $usuario->nombre = $request->input('nombre');
+    $usuario->apellidos = $request->input('apellidos');
+    $usuario->email = $request->input('email');
+    $usuario->password = bcrypt($request->input('password'));
+    $usuario->save();
+
+    // Redirigir al usuario a la página de inicio de sesión
+    return redirect('/login');
+}
+
     /**
      * Store a newly created resource in storage.
      *
@@ -85,7 +107,6 @@ class UsuariosController extends Controller
     $usuario = new Usuario;
     $usuario->nombre = $request->input('nombre');
     $usuario->apellidos = $request->input('apellidos');
-    $usuario->fechaNacimiento = $request->input('fecha_nacimiento');
     $usuario->password = bcrypt($request->input('password'));
     $usuario->usuario = $request->input('usuario');
     $usuario->email = $request->input('email');
