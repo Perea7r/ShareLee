@@ -69,7 +69,7 @@ class LibroController extends Controller
         $libro->save();
 
         session()->flash('status', '¡Libro subido! Gracias');
-        return redirect()->route('index');
+        return redirect('/');
     }
 
 }
