@@ -12,7 +12,7 @@
                 </div>
 
                 <!-- Contenido del formulario de login -->
-                <form id="form-login" action="{{ route('login') }}" method="POST">
+                <form id="form-login" method="POST">
                     @csrf
                     <div id="contenido__entrar" class="contenido">
                         <h2 class="focus font-Montserrat text-2xl font-bold my-10">Iniciar sesión</h2>
@@ -34,7 +34,7 @@
                 </form>
 
                 <!-- Contenido del formulario de registro -->
-                <form id="form-register" action="{{ route('register') }}" method="POST">
+                <form id="form-register" method="POST">
                     @csrf
                     <div id="contenido__nuevo-usuario" class="contenido hidden">
                         <h2 class="font-Montserrat text-2xl font-bold my-8">Nuevo usuario</h2>

@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\LibroController;
-use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\CustomAuthController;
 use Illuminate\Support\Facades\Route;
 
 //La ruta / corresponde al método index del controlador LibroController.
@@ -19,7 +19,9 @@ Route::get('/ejemplar/{libro}', [LibroController::class, 'show'])->name('ejempla
 //La ruta /categorias (método POST) corresponde al método store del controlador LibroController.
 Route::post('/categorias', [LibroController::class, 'store'])->name('categorias.store');
 
-Route::get('/login', [UsuariosController::class, 'showLoginForm'])->name('login');
-
-
-
+Route::get('dashboard', [CustomAuthController::class, 'dashboard']);
+Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
+Route::get('register', [CustomAuthController::class, 'register'])->name('register-user');
+Route::post('customRegister', [CustomAuthController::class, 'customRegister'])->name('register.custom');
+Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');

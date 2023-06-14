@@ -35,19 +35,43 @@
 
             <!-- Right column container -->
 
-            <form class="my-8 w-60 flex flex-col text-center justify-center">
+            <form action="{{ route('register.custom') }}" method="POST"
+                class="my-8 w-60 flex flex-col text-center justify-center">
+                @csrf
+
                 <h2 class="font-Montserrat text-2xl font-bold my-8">Nuevo usuario</h2>
 
                 <div class="form-control gap-4">
-                    <input placeholder="Nombre*" class="text__input" type="text" name="nombre" id="nombre">
-                    <input placeholder="Apellidos*" class="text__input" type="text" name="apellidos" id="apellidos">
-                    <input placeholder="Email*" class="text__input" type="email" name="email" id="email">
-                    <input placeholder="Contraseña*" class="text__input" type="password" name="password" id="password">
+                    <div>
+                        <input placeholder="Nombre*" class="text__input" type="text" id="nombre">
+                        @if ($errors->has('name'))
+                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                        @endif
+                    </div>
+                    <div>
+                        <input placeholder="Apellidos*" class="text__input" type="text" name="apellidos"
+                            id="apellidos">
+                        @if ($errors->has('apellidos'))
+                            <span class="text-danger">{{ $errors->first('apellidos') }}</span>
+                        @endif
+                    </div>
+                    <div>
+                        <input placeholder="Email*" class="text__input" type="email" id="email">
+                        @if ($errors->has('email'))
+                            <span class="text-danger">{{ $errors->first('email') }}</span>
+                        @endif
+                    </div>
+                    <div>
+                        <input placeholder="Contraseña*" class="text__input" type="password" id="password">
+                        @if ($errors->has('password'))
+                            <span class="text-danger">{{ $errors->first('password') }}</span>
+                        @endif
+                    </div>
                 </div>
 
 
 
-                <button
+                <button type="submit"
                     class="btn rounded-none btn-block bg-gradient-to-r border-black from-secondary to-green-400 capitalize text-base font-Montserrat my-8">Registrarme</button>
 
             </form>
