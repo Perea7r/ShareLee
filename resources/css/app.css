@@ -83,3 +83,8 @@
 .activo ~ li a:hover {
     color: #111827;
 }
+
+b {
+    word-spacing: -0.1em;
+    letter-spacing: normal;
+}
