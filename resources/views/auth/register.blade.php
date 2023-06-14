@@ -35,7 +35,7 @@
 
             <!-- Right column container -->
 
-            <form action="{{ route('register.custom') }}" method="POST"
+            <form action="{{ route('register') }}" method="POST"
                 class="my-8 w-60 flex flex-col text-center justify-center">
                 @csrf
 
@@ -43,26 +43,28 @@
 
                 <div class="form-control gap-4">
                     <div>
-                        <input placeholder="Nombre*" class="text__input" type="text" id="nombre">
-                        @if ($errors->has('name'))
-                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                        <input placeholder="Nombre*" name="nombre" class="text__input" type="text" id="nombre"
+                            required>
+                        @if ($errors->has('nombre'))
+                            <span class="text-danger">{{ $errors->first('nombre') }}</span>
                         @endif
                     </div>
                     <div>
-                        <input placeholder="Apellidos*" class="text__input" type="text" name="apellidos"
-                            id="apellidos">
+                        <input placeholder="Apellidos*" name="apellidos" class="text__input" type="text"
+                            name="apellidos" id="apellidos" required>
                         @if ($errors->has('apellidos'))
                             <span class="text-danger">{{ $errors->first('apellidos') }}</span>
                         @endif
                     </div>
                     <div>
-                        <input placeholder="Email*" class="text__input" type="email" id="email">
+                        <input placeholder="Email*" name="email" class="text__input" type="email" id="email">
                         @if ($errors->has('email'))
                             <span class="text-danger">{{ $errors->first('email') }}</span>
                         @endif
                     </div>
                     <div>
-                        <input placeholder="Contraseña*" class="text__input" type="password" id="password">
+                        <input placeholder="Contraseña*" name="password" class="text__input" type="password"
+                            id="password">
                         @if ($errors->has('password'))
                             <span class="text-danger">{{ $errors->first('password') }}</span>
                         @endif

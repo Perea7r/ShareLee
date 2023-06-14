@@ -35,14 +35,13 @@
 
             <!-- Right column container -->
 
-            <form action="{{ route('login.custom') }}" method="POST"
-                class="my-8 w-60 flex flex-col text-center justify-center">
+            <form action="/login" method="POST" class="my-8 w-60 flex flex-col text-center justify-center">
                 @csrf
                 <h2 class="font-Montserrat text-2xl font-bold my-8">Inicia sesión</h2>
 
                 <div class="form-control gap-4">
                     <div>
-                        <input placeholder="Email*" class="text__input" type="email" id="email">
+                        <input placeholder="Email*" class="text__input" type="email" name="email" id="email">
                         @if ($errors->has('email'))
                             <span class="text-danger">{{ $errors->first('email') }}</span>
                         @endif
