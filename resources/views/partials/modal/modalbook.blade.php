@@ -10,7 +10,7 @@
             <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
                 @include('partials.modal.input-modalbook')
             </div>
-                <img class="h-60 w-40 mt-3  bottom-56" id="preview-img" src="#" alt="Vista previa de la imagen">
+                
 
             <div class="modal-action mt-0">
                 <button for="subir-libro" type="submit" class="form__button">Subir</button>

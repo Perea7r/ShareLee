@@ -139,7 +139,7 @@
     </label>
 </div>
 
-<div class="form-control w-64 row-span-3">
+<div class="form-control w-64">
     <label class="input-group-vertical" for="foto">
         <span class="font-Montserrat text-sm">Foto</span>
         <input type="file" name="foto" id="foto"
@@ -147,6 +147,10 @@
             @error('foto')
                 <small class="text-red-600">{{$message}}</small>
             @enderror
+</div>
+
+<div class="w-64 col-span-1 row-span-3">
+    <img class="h-60 w-40 object-cover" id="preview-img" src="#" alt="Vista previa de la imagen">
 </div>
 
 
