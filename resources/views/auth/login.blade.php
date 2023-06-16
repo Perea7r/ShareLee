@@ -58,7 +58,6 @@
                 <button type="submit"
                     class="btn text-base rounded-none bg-gradient-to-r from-sky-600 to-sky-400 border border-black capitalize font-Montserrat my-8">Iniciar
                     sesión</button>
-                    <a class="text-accent mb-3" href="{{ route('password.request') }}">¿Has olvidado tu contraseña?</a>
                 <a class="text-accent" href="/register">¿Aún no tienes una cuenta? Regístrate</a>
 
             </form>

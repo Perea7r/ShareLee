@@ -72,6 +72,7 @@
 
                 </div>
             </div>
+
             <div class="mis-libros contenido-oculto">
                 <div class="w-full">
 
@@ -97,9 +98,9 @@
                             @endforeach
                         </div>
                     </div>
-
                 </div>
             </div>
+            
             <div class="mis-mensajes contenido-oculto">
                 <div class="w-full mx-20">
 
