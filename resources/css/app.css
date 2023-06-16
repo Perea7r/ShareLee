@@ -88,3 +88,9 @@ b {
     word-spacing: -0.1em;
     letter-spacing: normal;
 }
+
+#preview-img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }

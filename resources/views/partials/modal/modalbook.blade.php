@@ -10,6 +10,7 @@
             <div class="grid grid-cols-3 grid-rows-5 gap-4 grid-flow-col font-Montserrat">
                 @include('partials.modal.input-modalbook')
             </div>
+                <img class="h-60 w-40 mt-3  bottom-56" id="preview-img" src="#" alt="Vista previa de la imagen">
 
             <div class="modal-action mt-0">
                 <button for="subir-libro" type="submit" class="form__button">Subir</button>
@@ -17,3 +18,19 @@
         </form>
     </div>
 </div>
+
+<script>
+const inputFile = document.getElementById('foto');
+const previewImg = document.getElementById('preview-img');
+
+inputFile.addEventListener('change', function() {
+  const file = this.files[0];
+  if (file) {
+    const url = URL.createObjectURL(file);
+    previewImg.setAttribute('src', url);
+    previewImg.style.display = 'block';
+  } else {
+    previewImg.style.display = 'none';
+  }
+});
+</script>
