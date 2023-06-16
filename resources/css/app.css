@@ -6,30 +6,31 @@
 
 @layer components {
     .carrousel__imagen {
-        @apply w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover:cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125;
+        @apply w-0 flex-grow object-cover opacity-80 transition duration-300 ease-in hover: cursor-crosshair hover:w-32 hover:opacity-100 hover:contrast-125;
     }
 
     .modalbook__select {
-        @apply select flex w-64 select-bordered focus:outline-offset-0 focus:outline-1 focus:outline-accent h-2 min-h-8 !rounded-tr-none !rounded-bl-md;
+        @apply select flex w-64 select-bordered focus: outline-offset-0 focus:outline-1 focus:outline-accent h-2 min-h-8 !rounded-tr-none !rounded-bl-md;
     }
 
     .form__button {
-        @apply btn bg-secondary hover:bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case;
+        @apply btn bg-secondary hover: bg-secondary hover:border-solid hover:border-2 hover:border-lime-700 font-Montserrat text-base normal-case;
     }
 
     .categorias__centerText {
         @apply font-Nefelibata font-[550] text-3xl absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
     }
 
-    .text__input{
-        @apply rounded-none input focus:border-none border border-black border-solid;
+    .text__input {
+        @apply rounded-none input focus: border-none border border-black border-solid;
     }
 
-    .button__entrar{
-        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus:bg-transparent focus:border-b-transparent focus:border-l-accent hover:bg-base-100 hover:border-transparent focus:border-t-accent focus:border-r-transparent focus:text-accent;
+    .button__entrar {
+        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus: bg-transparent focus:border-b-transparent focus:border-l-accent hover:bg-base-100 hover:border-transparent focus:border-t-accent focus:border-r-transparent focus:text-accent;
     }
-    .button__nuevo-usuario{
-        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus:bg-transparent focus:border-b-transparent focus:border-r-secondary hover:bg-base-100 hover:border-transparent focus:border-l-transparent focus:border-t-secondary focus:text-secondary;
+
+    .button__nuevo-usuario {
+        @apply w-1/2 rounded-none border-2 border-solid border-black bg-transparent focus: bg-transparent focus:border-b-transparent focus:border-r-secondary hover:bg-base-100 hover:border-transparent focus:border-l-transparent focus:border-t-secondary focus:text-secondary;
     }
 }
 
@@ -59,7 +60,7 @@
     background: transparent;
 }
 
-[id="heart"]:checked + label {
+[id="heart"]:checked+label {
     color: #e2264d;
     will-change: font-size;
 }
@@ -80,7 +81,7 @@
     padding: 0.5rem 1rem;
 }
 
-.activo ~ li a:hover {
+.activo~li a:hover {
     color: #111827;
 }
 
@@ -93,4 +94,4 @@ b {
     max-width: 100%;
     height: auto;
     display: none;
-  }
+}
