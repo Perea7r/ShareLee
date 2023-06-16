@@ -75,7 +75,7 @@
 
                 <button type="submit"
                     class="btn rounded-none btn-block bg-gradient-to-r border-black from-secondary to-green-400 capitalize text-base font-Montserrat my-8">Registrarme</button>
-
+                    <a class="text-secondary mb-3" href="/login">¿Ya tienes una cuenta? Inicia Sesion</a>
             </form>
         </div>
 
