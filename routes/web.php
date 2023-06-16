@@ -37,4 +37,4 @@ Route::post('/usuarios', [UsuariosController::class, 'store'])->name('usuarios.s
 Route::put('/usuarios/{id}', [UsuariosController::class, 'update'])->name('usuarios.update');
 Route::delete('/usuarios/{id}', [UsuariosController::class, 'destroy'])->name('usuarios.destroy');
 
-Route::post('/logout', [App\Http\Controllers\UsuariosController::class, 'logout'])->name('logout');
+Route::post('/logout', [UsuariosController::class, 'logout'])->name('logout');

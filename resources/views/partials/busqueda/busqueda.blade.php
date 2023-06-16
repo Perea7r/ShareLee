@@ -4,11 +4,13 @@
             <div class="dropdown dropdown-bottom">
                 <input tabindex="0" type="search" name="search" value="{{ $search }}" autocomplete="off"
                     class="input join-item !outline-none border-b-2" placeholder="Busca tu libro..." />
-                <ul tabindex="0" class="dropdown-content menu bg-base-100 z-50">
-                    @foreach ($libros as $libro)
-                        <li> <a href="/ejemplar/{{ $libro->idEjemplar }}">{{ $libro->titulo }}</a></li>
-                    @endforeach
-                </ul>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 z-50">
+                        @foreach ($libros as $libro)
+                            @if ($loop->index < 5)
+                                <li> <a href="/ejemplar/{{ $libro->idEjemplar }}">{{ $libro->titulo }}</a></li>
+                            @endif
+                        @endforeach
+                    </ul>
             </div>
         </div>
         <button class="join-item btn-primary w-20">Search</button>
