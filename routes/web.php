@@ -4,6 +4,7 @@ use App\Http\Controllers\AutenticacionController;
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\LibroController;
 use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\AprendizajeController;
 use Illuminate\Support\Facades\Route;
 
 //La ruta / corresponde al método index del controlador LibroController.
@@ -31,10 +32,12 @@ Route::get('/register', function () {
 
 Route::post('/register', [UsuariosController::class, 'register']);
 
-Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios');
-Route::get('/usuarios/{id}', [UsuariosController::class, 'show'])->name('usuarios.show');
-Route::post('/usuarios', [UsuariosController::class, 'store'])->name('usuarios.store');
-Route::put('/usuarios/{id}', [UsuariosController::class, 'update'])->name('usuarios.update');
-Route::delete('/usuarios/{id}', [UsuariosController::class, 'destroy'])->name('usuarios.destroy');
+Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios')->middleware('auth');
+Route::get('/usuarios/{id}', [UsuariosController::class, 'show'])->name('usuarios.show')->middleware('auth');
+Route::post('/usuarios', [UsuariosController::class, 'store'])->name('usuarios.store')->middleware('auth');
+Route::put('/usuarios/{id}', [UsuariosController::class, 'update'])->name('usuarios.update')->middleware('auth');
+Route::delete('/usuarios/{id}', [UsuariosController::class, 'destroy'])->name('usuarios.destroy')->middleware('auth');
 
-Route::post('/logout', [UsuariosController::class, 'logout'])->name('logout');
+Route::post('/logout', [UsuariosController::class, 'logout'])->name('logout')->middleware('auth');
+
+Route::get('/aprendizaje', [AprendizajeController::class, 'aprendizaje'])->name('aprendizaje')->middleware('auth');

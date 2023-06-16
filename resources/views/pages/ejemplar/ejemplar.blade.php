@@ -38,7 +38,7 @@
                     <p class="text-lg font-Montserrat text-center">{{ $usuario->nombre . ' ' . $usuario->apellidos }}</p>
                     <div class="col-start-2">
 
-                        <div class="rating space-x-1">
+                        <div class="rating space-x-1 align-middle justify-center flex">
                             <input type="radio" name="rating" class="mask mask-star-2 bg-accent" />
                             <input type="radio" name="rating" class="mask mask-star-2 bg-accent" />
                             <input type="radio" name="rating" class="mask mask-star-2 bg-accent" />
@@ -74,7 +74,7 @@
             </div>
 
             <div class="flex flex-col justify-center w-40">
-                <a href="#">
+                <a href="/aprendizaje">
                     <figure class="flex justify-center">
                         <img class="h-38 w-40" src="/images/libros_intercambio.svg" alt="Icono del intercambio de libros">
                     </figure>
