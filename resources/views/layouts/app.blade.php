@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShareLee - @yield('title')</title>
     <link rel="icon" href="images/bookscategory/libroAmarillo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="description" content="@yield('meta-description', 'default meta description')">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -42,6 +43,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 @include('partials.modal.modalbook')
 @include('partials.modal.modalLogin')
 
