@@ -8,6 +8,7 @@
     <title>ShareLee - @yield('title')</title>
     <link rel="icon" href="images/bookscategory/libroAmarillo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="">
     <meta name="description" content="@yield('meta-description', 'default meta description')">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

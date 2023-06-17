@@ -1,4 +1,4 @@
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroVerde.png" alt="icono libro color Verde">
     <div class="categorias__centerText">
         <a href="/categorias/1">
@@ -6,7 +6,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroNaranja.png" alt="icono libro color Naranja">
     <div class="categorias__centerText">
         <a href="/categorias/2">
@@ -14,7 +14,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroAmarillo.png" alt="icono libro color Amarillo">
     <div class="categorias__centerText">
         <a href="/categorias/3">
@@ -22,7 +22,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroVerdePocho.png" alt="icono libro color Verde claro">
     <div class="categorias__centerText">
         <a href="/categorias/4">
@@ -30,7 +30,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroGris.png" alt="icono libro color Gris">
     <div class="categorias__centerText">
         <a href="/categorias/5">
@@ -38,7 +38,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroLila.png" alt="icono libro color Lila">
     <div class="categorias__centerText">
         <a href="/categorias/6">
@@ -46,7 +46,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroNaranjaPocho.png" alt="icono libro color Naranja claro">
     <div class="categorias__centerText">
         <a href="/categorias/7">
@@ -54,7 +54,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroHueso.png" alt="icono libro color Hueso">
     <div class="categorias__centerText">
         <a href="/categorias/8">
@@ -62,7 +62,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroRosa.png" alt="icono libro color Rosa">
     <div class="categorias__centerText">
         <a href="/categorias/9">
@@ -70,7 +70,7 @@
         </a>
     </div>
 </div>
-<div class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
+<div data-aos="flip-up" data-aos-duration="500" class="relative inline-block text-center w-44 lg:w-full lg:p-7 p-4">
     <img src="/images/bookscategory/libroAzul.png" alt="icono libro color Azul">
     <div class="categorias__centerText">
         <a href="/categorias/10">
