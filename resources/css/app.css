@@ -167,20 +167,21 @@ b {
     }
   }
 */
-.yoda{
+.yoda {
     position: absolute;
-    -webkit-animation: run 4s both 5s linear,
-                       bounce 2s ease infinite;
+    animation: run 5s both 1s linear, bounce 2s ease infinite;
+  }
+  
+  @keyframes run {
+    from {
+      left: -200px;
+      opacity: 1;
+    }
+    to {
+      left: 100%;
+    }
     
-            animation: run 5s both 5s linear,
-                       bounce 2s ease infinite;
-            
-}
-
-@keyframes run{
-    from{left: -200px;}
-    to{left: 100%;}
-}
+  }
 
 
 @keyframes bounce {

@@ -10,7 +10,7 @@
     <script src="js/app.js"></script>
 </head>
 
-<body class="body bg-black w-full h-screen fondo__pantalla">
+<body class="body bg-black w-full fondo__pantalla overflow-hidden">
     <div>
         <canvas class="pointer-events-none w-full h-full fixed top-0 left-0 z-50"></canvas>
     </div>
@@ -28,8 +28,8 @@
         </div>
     </div>
 
-    <div class="w-screen">
-        <img class="yoda h-20 w-20" src="/images/yoda.png" alt="yoda fly">
+    <div class="overflow-hidden">
+        <img class="yoda h-20 w-20" src="/images/yoda.png" alt="yoda">
     </div>
 
 </body>
