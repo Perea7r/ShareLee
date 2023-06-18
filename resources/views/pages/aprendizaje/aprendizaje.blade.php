@@ -29,7 +29,7 @@
     </div>
 
     <div class="w-screen">
-        <img class="yoda h-36 w-36" src="/images/yoda.png" alt="yoda fly">
+        <img class="yoda h-20 w-20" src="/images/yoda.png" alt="yoda fly">
     </div>
 
 </body>
