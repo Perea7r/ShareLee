@@ -168,11 +168,23 @@ b {
 */
 .yoda{
     position: absolute;
-    animation: run 7s both 7s infinite linear;
+    -webkit-animation: run 7s both 7s infinite linear,
+                       bounce 2s ease infinite;
+    
+            animation: run 7s both 7s infinite linear,
+                       bounce 2s ease infinite;
             
 }
 
 @keyframes run{
     from{left: -200px;}
     to{left: 100%;}
+}
+
+
+@keyframes bounce {
+    0% { transform:translateY(0%); }
+    25% { transform:translateY(-20%); }
+    50% { transform:translateY(-20%); }
+    100% { transform:translateY(0); }
 }
