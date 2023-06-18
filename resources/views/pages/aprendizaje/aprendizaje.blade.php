@@ -16,7 +16,21 @@
     </div>
     @include('partials.nav.navAprendizaje')
 
-    <h1 class="h1-intro font-Dreamscape text-5xl">Sobre mi</h1>
+    <div class="flex flex-col justify-center items-center mt-56">
+
+        <p class="text-center h1-intro font-Dreamscape text-3xl">Soy</p>
+        <p class="mt-3 neonMorado text-center h1-intro font-Dreamscape text-7xl">Rub<span class="flicker-fast">e</span>n
+            Perea</p>
+        <p class="mt-5 neonMorado text-center h1-intro font-Dreamscape text-7xl">Desarrollador Fr<span
+                class="flicker-slow">o</span>ntend</p>
+        <div class="welcome text-center mt-10">
+            <span class="text-xl font-Scifi">Bienvenidos a mi portfolio</span>
+        </div>
+    </div>
+
+    <div class="w-screen">
+        <img class="yoda h-36 w-36" src="/images/yoda.png" alt="yoda fly">
+    </div>
 
 </body>
 

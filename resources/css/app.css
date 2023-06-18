@@ -105,9 +105,74 @@ b {
     z-index: 999;
   }
 
-  .neonNaranja {
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-      color: #fff6a9;
-    animation: blink 12s infinite;
-    -webkit-animation: blink 12s infinite;
+.welcome{
+    background-color: #38003eff;
+    border-radius: 12px;
+    width: 500px;
+    height: 60px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+
+  .neonMorado {
+    text-shadow: 0 0 5px #8a2be2, 0 0 15px #8a2be2, 0 0 20px #8a2be2, 0 0 40px #8a2be2, 0 0 60px #ff00ff, 0 0 10px #ff69b4, 0 0 98px #ff00ff;
+    color: #fff;
   }
+
+  .buttonFlip {
+    animation: buttonFlip 4s infinite;
+  }
+  
+  @keyframes buttonFlip {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .flicker-slow{
+    animation: flicker 3s linear infinite 10s;
+  }
+  
+  .flicker-fast{
+    animation: flicker 1s linear infinite 7s;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
+  } 
+
+/*  .yoda {
+    position: absolute;
+    animation: fly 1s linear infinite;
+    left: 0;
+    right: 0;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+*/
+.yoda{
+    position: absolute;
+    animation: run 7s both 7s infinite linear;
+            
+}
+
+@keyframes run{
+    from{left: -200px;}
+    to{left: 100%;}
+}

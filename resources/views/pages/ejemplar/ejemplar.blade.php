@@ -27,6 +27,7 @@
                 </table>
             </div>
 
+            @auth
             <div class="flex flex-col mt-2 gap-6">
 
                 <div class="grid grid-cols-[1fr_2fr] grid-rows-2">
@@ -65,6 +66,8 @@
 
                 </div>
             </div>
+            @endauth
+            
         </div>
 
         <div class="flex justify-between my-14">
