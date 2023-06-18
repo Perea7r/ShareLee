@@ -21,7 +21,7 @@
                 </ul>
             </div>
         </div>
-        <button class="join-item btn-primary w-20">Search</button>
+        <button class="join-item btn-primary w-20">Buscar</button>
     </div>
 
 </form>

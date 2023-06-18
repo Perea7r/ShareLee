@@ -9,9 +9,9 @@
         <li class="text-lg font-medium">
             <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">PORTFOLIO</a>
         </li>
-        <li class="text-lg font-medium">
+        <!--<li class="text-lg font-medium">
             <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">CERTIFICADOS</a>
-        </li>
+        </li> -->
         <li class="text-lg font-medium">
             <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">CONTÁCTAME</a>
         </li>
