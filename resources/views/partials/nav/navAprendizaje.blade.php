@@ -4,7 +4,7 @@
             <a href="#" class="hover:underline hover:underline-offset-8 hover:text-accent text">SOBRE MÍ</a>
         </li>
         <li class="text-lg font-medium">
-            <a href="#projects" class="hover:underline hover:underline-offset-8 hover:text-accent">CONOCIMIENTOS</a>
+            <a href="#projects" class="hover:underline hover:underline-offset-8 hover:text-accent">TECNOLOGÍAS</a>
         </li>
         <li class="text-lg font-medium">
             <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">PORTFOLIO</a>
