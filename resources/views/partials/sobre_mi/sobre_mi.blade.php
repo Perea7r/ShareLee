@@ -1,6 +1,6 @@
         <div class="flex relative flex-direction-row justify-center items-center gap-7 mt-10 top-1">
             <img class="w-60" src="/images/ruben.png" alt="Ruben Perea">
-            <a class="a w-36 text-center" href="/pdf/ruben.pdf" target="_blank">
+            <a class="a w-36 text-center hover:text-white" href="/pdf/ruben.pdf" target="_blank" style="--buttoncolor: #8a2be2;">
                 <span></span>
                 <span></span>
                 <span></span>
