@@ -163,14 +163,11 @@
 </body>
 
 <script>
-    const scrollButton = document.querySelector('.scroll-to-top');
+ const scrollToTop = document.getElementById('scroll-to-top');
 
-    scrollButton.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+scrollToTop.addEventListener('click', () => {
+  scrollToTop.classList.add('animate');
+});
 </script>
 
 <script>
