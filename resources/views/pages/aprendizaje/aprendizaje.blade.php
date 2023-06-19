@@ -36,121 +36,30 @@
     </div>
 
     <div class="flex flex-col justify-center items-center mt-72">
-        <h1 data-aos="fade-up" class="font-Scifi text-4xl">Sobre mi</h1>
+        <h1 id="sobremi" data-aos="fade-up" class="font-Scifi text-4xl">Sobre mi</h1>
         @include('partials.sobre_mi.sobre_mi')
 
-        <h1 data-aos="fade-up" class="mt-10 font-Scifi text-4xl">Tecnologías</h1>
+        <h1 id="tecnologias" data-aos="fade-up" class="mt-20 font-Scifi text-4xl">Tecnologías</h1>
+        @include('partials.skills.skills')
 
-        <div class="grid grid-cols-4 gap-4">
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #d84924;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/html.svg" alt="HTML">
-              <p>HTML</p>
-            </div>
-          
-            <div data-aos="zoom-in" data-aos-duration="1000"  class="a w-36 text-center" style="--buttoncolor: #254bdd;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/css.svg" alt="CSS">
-              <p>CSS</p>
-            </div>
-          
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #ead41c;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/js.svg" alt="JS">
-              <p>JS</p>
-            </div>
-          
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #c36291;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/sass.svg" alt="SASS">
-              <p>SASS</p>
-            </div>
-          
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #f22a1d;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/laravel.svg" alt="LARAVEL">
-              <p>LARAVEL</p>
-            </div>
-          
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #7175aa;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/php.svg" alt="PHP">
-              <p>PHP</p>
-            </div>
+        <h1 id="misproyectos" data-aos="fade-up" class="mt-20 mb-10 font-Scifi text-4xl">Mis proyectos</h1>
 
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #67aa3c;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/spring.svg" alt="SPRING">
-              <p>SPRING</p>
-            </div>
+          <article class="mx-auto w-1/2 shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(/images/sharelee.png);">
+                <a href="/">
+                    <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+                        <h1 class="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                           <p class="font-Special">ShareLee</p> 
+                        </h1>
+                        <div class="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                        </div>
+                        <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500 font-Montserrat">
+                            Proyecto realizado con Laravel, tailwind y MySQL, es una web de intercambio de libros, con sistema de registro de usuarios y subidas de libros.
+                        </p>
+                    </div>
+                </a>
+            </article>
 
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #e01e23;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <img class="invert" src="/images/skills/java.svg" alt="JAVA">
-              <p>JAVA</p>
-            </div>
-
-            <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #3b7f3a;">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <img class="invert" src="/images/skills/node.svg" alt="NODEJS">
-              <p>NODEJS</p>
-              </div>
             
-              <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #07adca;">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <img class="invert" src="/images/skills/tailwind.svg" alt="TAILWIND">
-              <p>TAILWIND</p>
-              </div>
-  
-              <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #d78620;">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <img class="invert" src="/images/skills/mysql.svg" alt="MYSQL">
-              <p>MYSQL</p>
-              </div>
-  
-              <div data-aos="zoom-in" data-aos-duration="1000" class="a w-36 text-center" style="--buttoncolor: #bf4231;">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <img class="invert" src="/images/skills/oracle.svg" alt="ORACLE">
-              <p>ORACLE</p>
-              </div>
-            
-          </div>
            
     </div>
 
