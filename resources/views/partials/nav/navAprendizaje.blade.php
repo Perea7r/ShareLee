@@ -13,7 +13,7 @@
             <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">CERTIFICADOS</a>
         </li> -->
         <li class="text-lg font-medium">
-            <a href="#about" class="hover:underline hover:underline-offset-8 hover:text-accent">CONTÁCTAME</a>
+            <a href="#contactame" class="hover:underline hover:underline-offset-8 hover:text-accent">CONTÁCTAME</a>
         </li>
     </ul>
 </nav>
