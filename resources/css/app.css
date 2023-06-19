@@ -138,11 +138,11 @@ b {
   }
 
   .flicker-slow{
-    animation: flicker 3s linear infinite 10s;
+    animation: flicker 3s linear infinite 3s;
   }
   
   .flicker-fast{
-    animation: flicker 1s linear infinite 7s;
+    animation: flicker 1s linear infinite 5s;
   }
   
   @keyframes flicker {
@@ -426,4 +426,29 @@ b {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.2);
+}
+
+.scroll-to-top img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

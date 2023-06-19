@@ -24,8 +24,8 @@
         <p class="mt-5 neonMorado text-center h1-intro font-Dreamscape text-7xl">Rub<span class="flicker-fast">e</span>n
             Perea</p>
         <p class=" mt-5 text-center h1-intro font-Dreamscape text-3xl">y soy</p>
-        <p class="mt-5 neonMorado text-center h1-intro font-Dreamscape text-7xl">web devel<span
-                class="flicker-slow">o</span>per</p>
+        <p class="mt-5 neonMorado text-center h1-intro font-Dreamscape text-7xl">Desarrollador <span
+                class="flicker-slow">w</span>eb</p>
         <div class="welcome text-center mt-10">
             <span class="text-xl font-Scifi">Bienvenidos a mi portfolio</span>
         </div>
@@ -106,8 +106,8 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <a href="https://www.linkedin.com/in/rubenpereaserrano" target="_blank" data-aos="zoom-in" data-aos-duration="1000" class="a  text-center"
-                            style="--buttoncolor: #0a66c2;">
+                        <a href="https://www.linkedin.com/in/rubenpereaserrano" target="_blank" data-aos="zoom-in"
+                            data-aos-duration="1000" class="a  text-center" style="--buttoncolor: #0a66c2;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -115,8 +115,8 @@
                             <img class="invert" src="/images/skills/linkedin.svg" alt="linkedin">
                         </a>
 
-                        <a href="https://github.com/Perea7r" target="_blank" data-aos="zoom-in" data-aos-duration="1000" class="a  text-center"
-                            style="--buttoncolor: #b900ff;">
+                        <a href="https://github.com/Perea7r" target="_blank" data-aos="zoom-in" data-aos-duration="1000"
+                            class="a  text-center" style="--buttoncolor: #b900ff;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -124,8 +124,8 @@
                             <img class="invert" src="/images/skills/github.svg" alt="github">
                         </a>
 
-                        <a href="rpereaserrano@outlook.com" data-aos="zoom-in" data-aos-duration="1000" class="a  text-center"
-                            style="--buttoncolor: #ead41c;">
+                        <a href="mailto:rpereaserrano@outlook.es" data-aos="zoom-in" data-aos-duration="1000"
+                            class="a  text-center" style="--buttoncolor: #ead41c;">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -156,7 +156,22 @@
         })
     </script>
 
+    <a href="#" class="scroll-to-top invert">
+        <img src="/images/plane.svg" alt="Subir" width="30">
+    </a>
+
 </body>
+
+<script>
+    const scrollButton = document.querySelector('.scroll-to-top');
+
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 
 <script>
     AOS.init();
